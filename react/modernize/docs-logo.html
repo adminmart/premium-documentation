@@ -342,43 +342,72 @@
               <h4 class="card-title">Change Logo</h4>
               <h5 class="card-subtitle mt-2 text-muted mb-4">
                 To change logo :
-                <span class="text-dark font-medium">src/app/layouts/full/vertical/sidebar/branding.component.ts</span>
+                <span class="text-dark font-medium">/main/src/layouts/full/shared/logo/Logo.tsx</span>
               </h5>
               <div class="border-2 border-start border-primary bg-light rounded p-3">
                 Put the logo image into the assets/images/logos folder.
               </div>
               <pre>
                     <code class="language-js py-0">
-import { Component } from '@angular/core';
-import { CoreService } from 'src/app/services/core.service';
-
-@Component({
-selector: 'app-branding',
-imports: [],
-template: `
-  &lt;a href=&quot;/&quot; class=&quot;logodark&quot;&gt;
-    &lt;img
-    src=&quot;./assets/images/logos/dark-logo.svg&quot;
-    class=&quot;align-middle m-2&quot;
-    alt=&quot;logo&quot;
-    /&gt;
-  &lt;/a&gt;
-
-  &lt;a href=&quot;/&quot; class=&quot;logolight&quot;&gt;
-    &lt;img
-    src=&quot;./assets/images/logos/light-logo.svg&quot;
-    class=&quot;align-middle m-2&quot;
-    alt=&quot;logo&quot;
-    /&gt;
-  &lt;/a&gt;
-`,
-})
-export class BrandingComponent {
-  options = this.settings.getOptions();
-  constructor(private settings: CoreService) {}
-}
+import { FC, useContext } from 'react';
+import { Link } from 'react-router';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { ReactComponent as LogoDark } from 'src/assets/images/logos/dark-logo.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { ReactComponent as LogoDarkRTL } from 'src/assets/images/logos/dark-rtl-logo.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { ReactComponent as LogoLight } from 'src/assets/images/logos/light-logo.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { ReactComponent as LogoLightRTL } from 'src/assets/images/logos/light-logo-rtl.svg';
+import { styled } from '@mui/material';
+import config from 'src/context/config';
+import { CustomizerContext } from 'src/context/CustomizerContext';
                       
+const Logo: FC = () => {
+  const { isCollapse, isSidebarHover, activeDir, activeMode } = useContext(CustomizerContext);
+  const TopbarHeight = config.topbarHeight;
                       
+  const LinkStyled = styled(Link)(() => ({
+    height: TopbarHeight,
+    width: isCollapse == "mini-sidebar" && !isSidebarHover ? '40px' : '180px',
+    overflow: 'hidden',
+    display: 'block',
+  }));
+                      
+  if (activeDir === 'ltr') {
+    return (
+      &lt;LinkStyled to="/" style={{
+        display: 'flex',
+        alignItems: 'center',
+      }}&gt;
+        {activeMode === 'dark' ? (
+          &lt;LogoLight /&gt;
+        ) : (
+          &lt;LogoDark /&gt;
+        )}
+      &lt;/LinkStyled&gt;
+    );
+  }
+                      
+  return (
+    &lt;LinkStyled to="/" style={{
+      display: 'flex',
+      alignItems: 'center',
+    }}&gt;
+      {activeMode === 'dark' ? (
+        &lt;LogoDarkRTL /&gt;
+      ) : (
+        &lt;LogoLightRTL /&gt;
+      )}
+    &lt;/LinkStyled&gt;
+  );
+};
+                      
+export default Logo;
                             </code>
                         </pre>
             </div>
