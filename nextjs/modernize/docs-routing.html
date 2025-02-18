@@ -7,14 +7,15 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords"
-        content="Adminmart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, MatDash admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
+        content="AdminMart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Modernize admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
     <meta name="description"
-        content="MatDash is powerful and clean admin dashboard template, inpired from Google's Material Design" />
+        content="Modernize is powerful and clean admin dashboard template, inpired from Google's Material Design" />
     <meta name="robots" content="noindex,nofollow" />
-    <title>MatDash Admin Template by Adminmart.com</title>
-    <link rel="canonical" href="https://adminmart.com/product/matdash-tailwind-react-admin-template/" />
+    <title>Modernize Admin Template by AdminMart.com</title>
+    <link rel="canonical"
+        href="https://adminmart.com/product/modernize-next-js-admin-dashboard/" />
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/matdash/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/modernize/favicon.ico" />
     <!-- This page css -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../styles/assets/simplebar/simplebar/dist/simplebar.css" />
@@ -31,6 +32,7 @@
 </head>
 
 <body>
+
 
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
@@ -53,7 +55,7 @@
                         <a href="index.html">
                             <b class="logo-icon">
                                 <!-- Dark Logo icon -->
-                                <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage"
+                                <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage"
                                     class="dark-logo" />
                             </b>
                             <!--End Logo icon -->
@@ -114,6 +116,11 @@
                                             <a href="docs-icon.html" class="nav-link sub-link"><i
                                                     class="ti ti-point me-3"></i>
                                                 <span class="hide-menu"> Icons </span></a>
+                                        </li>
+                                        <li class="sidebar-item mb-0">
+                                            <a href="docs-shadow.html" class="nav-link sub-link"><i
+                                                    class="ti ti-point me-3"></i>
+                                                <span class="hide-menu"> Shadow </span></a>
                                         </li>
                                     </ul>
                                 </li>
@@ -184,7 +191,7 @@
                             <a href="index.html">
                                 <b class="logo-icon">
                                     <!-- Dark Logo icon -->
-                                    <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage"
+                                    <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage"
                                         class="dark-logo" />
                                 </b>
                                 <!--End Logo icon -->
@@ -246,6 +253,11 @@
                                                 <a href="docs-icon.html" class="nav-link sub-link"><i
                                                         class="ti ti-point me-3"></i>
                                                     <span class="hide-menu"> Icons </span></a>
+                                            </li>
+                                            <li class="sidebar-item mb-0">
+                                                <a href="docs-shadow.html" class="nav-link sub-link"><i
+                                                        class="ti ti-point me-3"></i>
+                                                    <span class="hide-menu"> Shadow </span></a>
                                             </li>
                                         </ul>
                                     </li>
@@ -327,7 +339,7 @@
                     <a href="index.html">
                         <b class="logo-icon d-lg-none d-block">
                             <!-- Dark Logo icon -->
-                            <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage"
+                            <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage"
                                 class="dark-logo" />
                         </b>
                         <!--End Logo icon -->
@@ -349,44 +361,44 @@
                     <!-- ============================================================== -->
                     <!-- Start Page Content -->
                     <!-- ============================================================== -->
-                    <h4 class="mb-4 pb-2">Typography</h3>
-                        <div class="mt-4 card">
-                            <div class="card-body">
-                                <h4>Google Fonts</h4>
-                                <h5 class="card-subtitle mt-4 text-muted">1) Change the google fonts link as per your
-                                    choice : <span class="text-dark font-medium">index.html </span></h5>
-                                <pre>                        <code class="language-html py-0 hljs xml">
-<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span>
-        <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap"</span>
-        <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
-        /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+                    <h4 class="mb-4 pb-2">Routing</h4>
+                    <div class="mt-4 card">
+                        <div class="card-body">
+                            <h4 class="card-title"> How to add page to sidebar ?</h4>
+                            <h5 class="font-weight-normal text-muted mt-3">Add same path as same as you put the page
+                                into pages folder.</h5>
+                            <pre>                            <code class="language-js py-0 hljs javascript">
+<span class="hljs-comment">// ------------------------------------------------------------------------</span>
+<span class="hljs-comment">// File: /src/app/(DashboardLayout)/layout/vertical/sidebar/MenuItems.ts</span>
+<span class="hljs-comment">// ------------------------------------------------------------------------</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-                        </code>
-                    </pre>
-
-                                <h5 class="card-subtitle mt-4 text-muted">2) Change Font family :<span
-                                        class="text-dark font-medium"> tailwind.config.ts </span></h5>
-                                <pre>                        <code class="language-js py-0 hljs javascript">
-    fontFamily: {
-      <span class="hljs-attr">sans</span>: [<span class="hljs-string">'Manrope'</span>, <span class="hljs-string">'system-ui'</span>, <span class="hljs-string">'serif'</span>], <span class="hljs-comment">// Define a custom sans-serif font family</span>
+const Menuitems: MenuitemsType[] = [
+    {
+        id: uniqueId(),
+        title: "General",
+        icon: "solar:screencast-2-linear",
+        href: "/",
     },
-                        </code>
-                    </pre>
-
-                            </div>
+    {
+        id: uniqueId(),
+        title: "Classic",
+        icon: "solar:atom-linear",
+        href: "/dashboards/classic",
+    },
+    {
+        id: uniqueId(),
+        title: "Analytical",
+        icon: "solar:box-minimalistic-linear",
+        href: "/dashboards/analytical",
+    },
+]
+                                </code>
+                            </pre>
                         </div>
-                        <!-- ============================================================== -->
-                        <!-- End Of Page Content -->
-                        <!-- ============================================================== -->
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Of Page Content -->
+                    <!-- ============================================================== -->
 
                 </div>
             </div>

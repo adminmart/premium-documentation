@@ -7,12 +7,12 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords"
-        content="Adminmart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, MatDash admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
+        content="AdminMart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, MatDashadmin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
     <meta name="description"
-        content="MatDash is powerful and clean admin dashboard template, inpired from Google's Material Design" />
+        content="MatDashis powerful and clean admin dashboard template, inpired from Google's Material Design" />
     <meta name="robots" content="noindex,nofollow" />
-    <title>MatDash Admin Template by Adminmart.com</title>
-    <link rel="canonical" href="https://adminmart.com/product/matdash-tailwind-react-admin-template/" />
+    <title>MatDashAdmin Template by AdminMart.com</title>
+    <link rel="canonical" href="https://adminmart.com/product/matdash-next-js-admin-dashboard-template/" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/matdash/favicon.ico" />
     <!-- This page css -->
@@ -21,6 +21,7 @@
     <link href="../../styles/dist/css/style.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../styles/assets/highlights/atom-one-dark.min.css" />
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,6 +32,7 @@
 </head>
 
 <body>
+
 
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
@@ -114,6 +116,11 @@
                                             <a href="docs-icon.html" class="nav-link sub-link"><i
                                                     class="ti ti-point me-3"></i>
                                                 <span class="hide-menu"> Icons </span></a>
+                                        </li>
+                                        <li class="sidebar-item mb-0">
+                                            <a href="docs-tailwind.html" class="nav-link sub-link"><i
+                                                    class="ti ti-point me-3"></i>
+                                                <span class="hide-menu">Tailwind</span></a>
                                         </li>
                                     </ul>
                                 </li>
@@ -247,6 +254,11 @@
                                                         class="ti ti-point me-3"></i>
                                                     <span class="hide-menu"> Icons </span></a>
                                             </li>
+                                            <li class="sidebar-item mb-0">
+                                                <a href="docs-tailwind.html" class="nav-link sub-link"><i
+                                                        class="ti ti-point me-3"></i>
+                                                    <span class="hide-menu">Tailwind</span></a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="sidebar-item">
@@ -349,44 +361,133 @@
                     <!-- ============================================================== -->
                     <!-- Start Page Content -->
                     <!-- ============================================================== -->
-                    <h4 class="mb-4 pb-2">Typography</h3>
-                        <div class="mt-4 card">
-                            <div class="card-body">
-                                <h4>Google Fonts</h4>
-                                <h5 class="card-subtitle mt-4 text-muted">1) Change the google fonts link as per your
-                                    choice : <span class="text-dark font-medium">index.html </span></h5>
-                                <pre>                        <code class="language-html py-0 hljs xml">
-<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span>
-        <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap"</span>
-        <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
-        /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-                        </code>
-                    </pre>
-
-                                <h5 class="card-subtitle mt-4 text-muted">2) Change Font family :<span
-                                        class="text-dark font-medium"> tailwind.config.ts </span></h5>
-                                <pre>                        <code class="language-js py-0 hljs javascript">
-    fontFamily: {
-      <span class="hljs-attr">sans</span>: [<span class="hljs-string">'Manrope'</span>, <span class="hljs-string">'system-ui'</span>, <span class="hljs-string">'serif'</span>], <span class="hljs-comment">// Define a custom sans-serif font family</span>
-    },
-                        </code>
-                    </pre>
-
-                            </div>
+                    <h4 class="mb-4 pb-2">Tailwind</h4>
+                    <div class="mt-4 card">
+                        <div class="card-body">
+                            <h4 class="card-title">1. Overrided Tailwind Classes</h4>
+                            <h5 class="card-subtitle mt-2 text-muted">For any kind of overwrite in
+                                shadow,border-radius,font-sizes,and declare color variables write here : <span
+                                    class="text-dark font-medium d-block mt-1">src/tailwind.config.ts</span></h5>
+                            <pre>                            <code class="language-js py-0 hljs javascript">
+    <span class="hljs-keyword">import</span> type { Config } <span class="hljs-keyword">from</span> <span class="hljs-string">"tailwindcss"</span>;
+    <span class="hljs-keyword">import</span> flowbite <span class="hljs-keyword">from</span> <span class="hljs-string">"flowbite-react/tailwind"</span>;
+    <span class="hljs-keyword">const</span> config: Config = {
+      <span class="hljs-attr">darkMode</span>: <span class="hljs-string">"class"</span>,
+      <span class="hljs-attr">content</span>: [
+        <span class="hljs-string">"./src/pages/**/*.{js,ts,jsx,tsx,mdx}"</span>,
+        <span class="hljs-string">"./src/components/**/*.{js,ts,jsx,tsx,mdx}"</span>,
+        <span class="hljs-string">"./src/app/**/*.{js,ts,jsx,tsx,mdx}"</span>,
+    
+        <span class="hljs-comment">// Flowbite content</span>
+        flowbite.content(),
+      ],
+      <span class="hljs-attr">theme</span>: {
+        <span class="hljs-attr">extend</span>: {
+          <span class="hljs-attr">boxShadow</span>: {
+            <span class="hljs-attr">md</span>: <span class="hljs-string">"0px 2px 4px -1px rgba(175, 182, 201, 0.2);"</span>,
+            <span class="hljs-attr">lg</span>: <span class="hljs-string">"0 1rem 3rem rgba(0, 0, 0, 0.175)"</span>,
+            <span class="hljs-string">"dark-md"</span>:
+              <span class="hljs-string">"rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px"</span>,
+            <span class="hljs-attr">sm</span>: <span class="hljs-string">"0 6px 24.2px -10px rgba(41, 52, 61, .22)"</span>,
+            <span class="hljs-string">"btn-shadow"</span>: <span class="hljs-string">"box-shadow: rgba(0, 0, 0, .05) 0 9px 17.5px"</span>,
+            <span class="hljs-attr">tw</span>:<span class="hljs-string">"rgba(175, 182, 201, 0.2) 0px 2px 4px -1px"</span>,
+            <span class="hljs-attr">btnshdw</span>: <span class="hljs-string">"0 17px 20px -8px rgba(77, 91, 236, .231372549)"</span>,
+          },
+          <span class="hljs-attr">borderRadius</span>: {
+            <span class="hljs-attr">sm</span>: <span class="hljs-string">"6px"</span>,
+            <span class="hljs-attr">md</span>: <span class="hljs-string">"9px"</span>,
+            <span class="hljs-attr">lg</span>: <span class="hljs-string">"24px"</span>,
+            <span class="hljs-attr">tw</span>: <span class="hljs-string">"12px"</span>,
+            <span class="hljs-attr">bb</span>: <span class="hljs-string">"20px"</span>,
+          },
+          <span class="hljs-attr">container</span>: {
+            <span class="hljs-attr">center</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">padding</span>: <span class="hljs-string">"20px"</span>,
+          },
+          <span class="hljs-attr">letterSpacing</span>: {
+            <span class="hljs-attr">tightest</span>: <span class="hljs-string">"-.075em"</span>,
+            <span class="hljs-attr">tighter</span>: <span class="hljs-string">"-.05em"</span>,
+            <span class="hljs-attr">tight</span>: <span class="hljs-string">"-.025em"</span>,
+            <span class="hljs-attr">normal</span>: <span class="hljs-string">"0"</span>,
+            <span class="hljs-attr">wide</span>: <span class="hljs-string">".025em"</span>,
+            <span class="hljs-attr">wider</span>: <span class="hljs-string">".05em"</span>,
+            <span class="hljs-attr">widest</span>: <span class="hljs-string">"1.5px"</span>,
+          },
+          <span class="hljs-attr">gap</span>: {
+            <span class="hljs-string">"30"</span>: <span class="hljs-string">"30px"</span>,
+          },
+          <span class="hljs-attr">padding</span>: {
+            <span class="hljs-string">"30"</span>: <span class="hljs-string">"30px"</span>,
+          },
+          <span class="hljs-attr">margin</span>: {
+            <span class="hljs-string">"30"</span>: <span class="hljs-string">"30px"</span>,
+          },
+          <span class="hljs-attr">fontSize</span>: {
+            <span class="hljs-string">"15"</span>: <span class="hljs-string">"15px"</span>,
+            <span class="hljs-string">"13"</span>: <span class="hljs-string">"13px"</span>,
+            <span class="hljs-string">"22"</span>: <span class="hljs-string">"22px"</span>,
+            <span class="hljs-string">"28"</span>: <span class="hljs-string">"28px"</span>,
+            <span class="hljs-string">"34"</span>: <span class="hljs-string">"34px"</span>,
+            <span class="hljs-string">"40"</span>: <span class="hljs-string">"40px"</span>,
+          },
+          <span class="hljs-attr">colors</span>: {
+            <span class="hljs-attr">cyan</span>: {
+              <span class="hljs-string">"500"</span>: <span class="hljs-string">"var(--color-primary)"</span>,
+              <span class="hljs-string">"600"</span>: <span class="hljs-string">"var(--color-primary)"</span>,
+              <span class="hljs-string">"700"</span>: <span class="hljs-string">"var(--color-primary)"</span>,
+            },
+    
+            <span class="hljs-attr">primary</span>: <span class="hljs-string">"var(--color-primary)"</span>,
+            <span class="hljs-attr">secondary</span>: <span class="hljs-string">"var(--color-secondary)"</span>,
+            <span class="hljs-attr">info</span>: <span class="hljs-string">"var(--color-info)"</span>,
+            <span class="hljs-attr">success</span>: <span class="hljs-string">"var(--color-success)"</span>,
+            <span class="hljs-attr">warning</span>: <span class="hljs-string">"var(--color-warning)"</span>,
+            <span class="hljs-attr">error</span>: <span class="hljs-string">"var(--color-error)"</span>,
+            <span class="hljs-attr">lightprimary</span>: <span class="hljs-string">"var(--color-lightprimary)"</span>,
+            <span class="hljs-attr">lightsecondary</span>: <span class="hljs-string">"var(--color-lightsecondary)"</span>,
+            <span class="hljs-attr">lightsuccess</span>: <span class="hljs-string">"var( --color-lightsuccess)"</span>,
+            <span class="hljs-attr">lighterror</span>: <span class="hljs-string">"var(--color-lighterror)"</span>,
+            <span class="hljs-attr">lightinfo</span>: <span class="hljs-string">"var(--color-lightinfo)"</span>,
+            <span class="hljs-attr">lightwarning</span>: <span class="hljs-string">"var(--color-lightwarning)"</span>,
+            <span class="hljs-attr">border</span>: <span class="hljs-string">"var(--color-border)"</span>,
+            <span class="hljs-attr">bordergray</span>: <span class="hljs-string">"var(--color-bordergray)"</span>,
+            <span class="hljs-attr">lightgray</span>: <span class="hljs-string">"var( --color-lightgray)"</span>,
+            <span class="hljs-attr">muted</span>: <span class="hljs-string">"var(--color-muted)"</span>,
+            <span class="hljs-attr">lighthover</span>: <span class="hljs-string">"var(--color-lighthover)"</span>,
+            <span class="hljs-attr">surface</span>: <span class="hljs-string">"var(--color-surface-ld)"</span>,
+            <span class="hljs-attr">sky</span>: <span class="hljs-string">"var(--color-sky)"</span>,
+            <span class="hljs-attr">bodytext</span>: <span class="hljs-string">"var(--color-bodytext)"</span>,
+            <span class="hljs-comment">//Dark Colors Variables</span>
+            dark: <span class="hljs-string">"var(--color-dark)"</span>,
+            <span class="hljs-attr">link</span>: <span class="hljs-string">"var(--color-link)"</span>,
+            <span class="hljs-attr">darklink</span>: <span class="hljs-string">"var(--color-darklink)"</span>,
+            <span class="hljs-attr">darkborder</span>: <span class="hljs-string">"var(--color-darkborder)"</span>,
+            <span class="hljs-attr">darkgray</span>: <span class="hljs-string">"var(--color-darkgray)"</span>,
+            <span class="hljs-attr">primaryemphasis</span>: <span class="hljs-string">"var(--color-primary-emphasis)"</span>,
+            <span class="hljs-attr">secondaryemphasis</span>: <span class="hljs-string">"var(--color-secondary-emphasis)"</span>,
+            <span class="hljs-attr">warningemphasis</span>: <span class="hljs-string">"var(--color-warning-emphasis)"</span>,
+            <span class="hljs-attr">erroremphasis</span>: <span class="hljs-string">"var(--color-error-emphasis)"</span>,
+            <span class="hljs-attr">successemphasis</span>: <span class="hljs-string">"var(--color-success-emphasis)"</span>,
+            <span class="hljs-attr">infoemphasis</span>: <span class="hljs-string">"var(--color-info-emphasis)"</span>,
+            <span class="hljs-attr">darkmuted</span>: <span class="hljs-string">"var( --color-darkmuted)"</span>,
+          },
+        },
+      },
+      <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-comment">//Add Flowbite Plugin</span>
+        <span class="hljs-built_in">require</span>(<span class="hljs-string">"flowbite/plugin"</span>),
+      ],
+    };
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> config;
+                                  
+     
+                                </code>
+                            </pre>
                         </div>
-                        <!-- ============================================================== -->
-                        <!-- End Of Page Content -->
-                        <!-- ============================================================== -->
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Of Page Content -->
+                    <!-- ============================================================== -->
 
                 </div>
             </div>

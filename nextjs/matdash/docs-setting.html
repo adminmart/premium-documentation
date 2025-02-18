@@ -7,12 +7,12 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords"
-    content="Adminmart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, MatDash admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
+    content="AdminMart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, MatDashadmin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
   <meta name="description"
-    content="MatDash is powerful and clean admin dashboard template, inpired from Google's Material Design" />
+    content="MatDashis powerful and clean admin dashboard template, inpired from Google's Material Design" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>MatDash Admin Template by Adminmart.com</title>
-  <link rel="canonical" href="https://adminmart.com/product/matdash-tailwind-react-admin-template/" />
+  <title>MatDashAdmin Template by AdminMart.com</title>
+  <link rel="canonical" href="https://adminmart.com/product/matdash-next-js-admin-dashboard-template/" />
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/matdash/favicon.ico" />
   <!-- This page css -->
@@ -110,6 +110,10 @@
                       <a href="docs-icon.html" class="nav-link sub-link"><i class="ti ti-point me-3"></i>
                         <span class="hide-menu"> Icons </span></a>
                     </li>
+                    <li class="sidebar-item mb-0">
+                      <a href="docs-tailwind.html" class="nav-link sub-link"><i class="ti ti-point me-3"></i>
+                        <span class="hide-menu">Tailwind</span></a>
+                    </li>
                   </ul>
                 </li>
                 <li class="sidebar-item">
@@ -152,8 +156,7 @@
 
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
-                      class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
-                      class="badge bg-secondary f-s-12">PRO</span></a>
+                      class="ti ti-refresh-dot me-3 fs-4"></i>Changelog</a>
                 </li>
               </ul>
             </nav>
@@ -237,6 +240,10 @@
                         <a href="docs-icon.html" class="nav-link sub-link"><i class="ti ti-point me-3"></i>
                           <span class="hide-menu"> Icons </span></a>
                       </li>
+                      <li class="sidebar-item mb-0">
+                        <a href="docs-tailwind.html" class="nav-link sub-link"><i class="ti ti-point me-3"></i>
+                          <span class="hide-menu">Tailwind</span></a>
+                      </li>
                     </ul>
                   </li>
                   <li class="sidebar-item">
@@ -279,8 +286,7 @@
                   <!--Support-->
                   <li class="sidebar-item">
                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
-                        class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
-                        class="badge bg-secondary f-s-12">PRO</span></a>
+                        class="ti ti-refresh-dot me-3 fs-4"></i>Changelog</a>
                   </li>
                 </ul>
               </nav>
@@ -337,10 +343,46 @@
           <h4 class="mb-4 pb-2">Theme Settings</h4>
           <div class="mt-4 card">
             <div class="card-body">
+              <h4 class="card-title">Customizer Usage</h4>
+
+              <div class="row mt-4">
+                <div class="col-md-4">
+                  <img alt="customizer" class="border rounded img-fluid"
+                    src="../../styles/dist/images/matdash/app-customizer.jpg" />
+                </div>
+                <div class="col-md-8">
+                  <p class="fs-6 text-muted">
+                    The Customizer enables you and your customers to modify
+                    the primary colors, themes, skins, layout options, and
+                    overall appearance of the template in real time.
+                  </p>
+                  <p class="fs-6 text-muted">
+                    While we recommend using this for enhanced customization,
+                    its use is entirely optional. Please review both scenarios
+                    carefully to understand its usage and benefits.
+                  </p>
+
+                  <div class="border-2 border-start border-primary bg-light rounded p-3">
+                    <span class="fw-semibold">Note : </span>
+
+                    <p class="fs-6 mt-2">You must have below files in your project :</p>
+                    <p class="fs-6 mt-2 mb-0">1. config.ts <span class="fw-medium d-block">Path:
+                        /src/app/context/config.ts</span></p>
+                    <p class="fs-6 mt-2">2. CustomizerContext.tsx <span class="fw-medium d-block">Path:
+                        /src/app/context/CustomizerContext/index.tsx</span></p>
+                    <p class="fs-6 mt-2">3. Customizer.tsx <span class="fw-medium d-block">Path:
+                        /src/app/(DashboardLayout)/layout/shared/customizer/Customizer.tsx</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
               <h4 class="card-title">1. How to set default settings ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 
 <span class="hljs-keyword">const</span> config = {
@@ -370,7 +412,7 @@ isSidebarHover: <span class="hljs-literal">false</span>,
               <h4 class="card-title">2. How to set right-to-left (RTL) settings ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 <span class="hljs-keyword">const</span> config = {
 <span class="hljs-attr">activeDir</span>: <span class="hljs-string">"rtl"</span>, <span class="hljs-comment">// change is here</span>
@@ -399,7 +441,7 @@ activeMode: <span class="hljs-string">"light"</span>,
               <h4 class="card-title">3. How to set Dark theme ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 <span class="hljs-keyword">const</span> config = {
 <span class="hljs-attr">activeDir</span>: <span class="hljs-string">"ltr"</span>, 
@@ -427,7 +469,7 @@ activeTheme: <span class="hljs-string">"BLUE_THEME"</span>,
               <h4 class="card-title">4. How to change color theme ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 <span class="hljs-keyword">const</span> config = {
 <span class="hljs-attr">activeDir</span>: <span class="hljs-string">"ltr"</span>, 
@@ -455,7 +497,7 @@ activeLayout: <span class="hljs-string">"vertical"</span>,
               <h4 class="card-title">5. How to set Horizontal layout ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 <span class="hljs-keyword">const</span> config = {
 <span class="hljs-attr">activeDir</span>: <span class="hljs-string">"ltr"</span>, 
@@ -483,7 +525,7 @@ isLayout: <span class="hljs-string">"boxed"</span>,
               <h4 class="card-title">6. How to set Fullwidth layout ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 <span class="hljs-keyword">const</span> config = {
 <span class="hljs-attr">activeDir</span>: <span class="hljs-string">"ltr"</span>, 
@@ -538,7 +580,7 @@ isSidebarHover: <span class="hljs-literal">false</span>,
               <h4 class="card-title">8. How to set Minisidebar ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 
 <span class="hljs-keyword">const</span> config = {
@@ -568,7 +610,7 @@ isLanguage: <span class="hljs-string">"en"</span>,
               <h4 class="card-title">9. How to set card with shadow ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 
 <span class="hljs-keyword">const</span> config = {
@@ -598,7 +640,7 @@ isMobileSidebar: <span class="hljs-literal">false</span>,
               <h4 class="card-title">10. How to set card with border ?</h4>
               <pre>                          <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 <span class="hljs-keyword">const</span> config = {
 <span class="hljs-attr">activeDir</span>: <span class="hljs-string">"ltr"</span>, 
@@ -627,7 +669,7 @@ isMobileSidebar: <span class="hljs-literal">false</span>,
               <h4 class="card-title">11. How to set theme border radius ?</h4>
               <pre>                            <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ----------------------------------------------------</span>
-<span class="hljs-comment">// File: src/context/config.ts</span>
+<span class="hljs-comment">// File: src/app/context/config.ts</span>
 <span class="hljs-comment">// ----------------------------------------------------</span>
 
 <span class="hljs-keyword">const</span> config = {
@@ -655,6 +697,7 @@ sidebarWidth: <span class="hljs-number">320</span>,
           <!-- ============================================================== -->
           <!-- End Of Page Content -->
           <!-- ============================================================== -->
+
         </div>
       </div>
       <!-- ============================================================== -->

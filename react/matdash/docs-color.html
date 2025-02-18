@@ -343,149 +343,143 @@
 
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Override Colors (Light / Dark Theme)</h4>
+              <h4 class="card-title">Override Colors</h4>
               <h5 class="card-subtitle mt-2 text-muted mb-4">
                 For any change in colors :
-                <span class="text-dark font-medium">src/theme/DefaultColors.tsx</span>
+                <span class="text-dark font-medium">main/src/css/theme/default-colors.css</span>
               </h5>
               <pre>
-                    <code class="language-js py-0">
-primary: {
-  main: '#5D87FF',
-  light: '#ECF2FF',
-  dark: '#4570EA',
-},
-secondary: {
-  main: '#49BEFF',
-  light: '#E8F7FF',
-  dark: '#23afdb',
-},
-success: {
-  main: '#13DEB9',
-  light: '#E6FFFA',
-  dark: '#02b3a9',
-  contrastText: '#ffffff',
-},
-info: {
-  main: '#539BFF',
-  light: '#EBF3FE',
-  dark: '#1682d4',
-  contrastText: '#ffffff',
-},
-error: {
-  main: '#FA896B',
-  light: '#FDEDE8',
-  dark: '#f3704d',
-  contrastText: '#ffffff',
-},
-warning: {
-  main: '#FFAE1F',
-  light: '#FEF5E5',
-  dark: '#ae8e59',
-  contrastText: '#ffffff',
-},
-purple: {
-  A50: '#EBF3FE',
-  A100: '#6610f2',
-  A200: '#557fb9',
-},
-grey: {
-  100: '#F2F6FA',
-  200: '#EAEFF4',
-  300: '#DFE5EF',
-  400: '#7C8FAC',
-  500: '#5A6A85',
-  600: '#2A3547',
-},
-text: {
-  primary: '#2A3547',
-  secondary: '#2A3547',
-},
-action: {
-  disabledBackground: 'rgba(73,82,88,0.12)',
-  hoverOpacity: 0.02,
-  hover: '#f6f9fc',
-},
-divider: '#e5eaef',
-background: {
-  default: '#ffffff',
-},                        
-                            </code>
-                        </pre>
+                <code class="language-js py-0">
+:root {
+  --color-info: #<span class="hljs-number">46</span>CAEB;
+  --color-success: #<span class="hljs-number">2</span>EA95C;
+  --color-warning: #f8c20a;
+  --color-error: #FF6692;
+  --color-lightsuccess: #<span class="hljs-number">2</span>EA95C40;
+  --color-lighterror: #FF669260;
+  --color-lightinfo: #<span class="hljs-number">46</span>caeb40;
+  --color-lightwarning: #F8C20A40;
+  --color-white: #fff;
+  --color-dark: #<span class="hljs-number">1</span>F2A3D;
+  --color-border: #e0e6eb;
+  --color-bordergray: #f3f3f4;
+  --color-darkborder: #<span class="hljs-number">333</span>F55;
+  --color-link: #<span class="hljs-number">2</span>a3547;
+  --color-muted: #EFF4FA;
+  --color-darkmuted: #<span class="hljs-number">2</span>A3851;
+  --color-darklink: #<span class="hljs-number">29343</span>d;
+  --color-lightgray: #F4F7FB;
+  --color-lighthover: #f6f7f9;
+  --color-darkgray: #<span class="hljs-number">1</span>A2537;
+  --color-sky: #<span class="hljs-number">0</span>A2540;
+  --color-error-emphasis: #d9577c;
+  --color-warning-emphasis: #d3a509;
+  --color-success-emphasis: #<span class="hljs-number">2</span>ea95c;
+  --color-info-emphasis: #<span class="hljs-number">3</span>cacc8;
+  --color-surface-ld: #ffffff;
+  --color-bodytext: #<span class="hljs-number">98</span>A4AE;
+  --color-warning-rgb: <span class="hljs-number">248</span>, <span class="hljs-number">194</span>, <span class="hljs-number">10</span>;
+  --color-error-rgb: <span class="hljs-number">255</span>, <span class="hljs-number">102</span>, <span class="hljs-number">146</span>;
+  --color-success-rgb: <span class="hljs-number">46</span>, <span class="hljs-number">169</span>, <span class="hljs-number">92</span>;
+}
+
+[data-color-theme=<span class="hljs-string">"BLUE_THEME"</span>] {
+  --color-primary: #<span class="hljs-number">635</span>BFF;
+  --color-secondary: #<span class="hljs-number">16</span>CDC7;
+  --color-primary-emphasis: #<span class="hljs-number">5249</span>fe;
+  --color-secondary-emphasis: #<span class="hljs-number">1</span>cc3bd;
+  --color-lightprimary: #<span class="hljs-number">635</span>BFF40;
+  --color-lightsecondary: #<span class="hljs-number">16</span>CDC740;
+  --color-primary-rgb: <span class="hljs-number">99</span>, <span class="hljs-number">91</span>, <span class="hljs-number">255</span>;
+  --color-secondary-rgb: <span class="hljs-number">20</span>, <span class="hljs-number">233</span>, <span class="hljs-number">226</span>;
+}
+
+[data-color-theme=<span class="hljs-string">"AQUA_THEME"</span>] {
+  --color-primary: #<span class="hljs-number">0074</span>BA;
+  --color-bghover: #<span class="hljs-number">00639</span>e;
+  --color-primary-emphasis: #<span class="hljs-number">00639</span>e;
+  --color-secondary-emphasis: #<span class="hljs-number">3</span>cb7a0;
+  --color-secondary: #<span class="hljs-number">47</span>D7BC;
+  --color-lightprimary: #<span class="hljs-number">0074</span>BA20;
+  --color-lightsecondary: #<span class="hljs-number">00639e20</span>;
+  --color-primary-rgb: <span class="hljs-number">0</span>, <span class="hljs-number">116</span>, <span class="hljs-number">186</span>;
+  --color-secondary-rgb: <span class="hljs-number">71</span>, <span class="hljs-number">215</span>, <span class="hljs-number">188</span>;
+
+}
+
+[data-color-theme=<span class="hljs-string">"PURPLE_THEME"</span>] {
+  --color-primary: #<span class="hljs-number">763</span>EBD;
+  --color-primary-emphasis: #<span class="hljs-number">6435</span>a1;
+  --color-secondary-emphasis: #<span class="hljs-number">7</span>fb0b5;
+  --color-secondary: #<span class="hljs-number">49</span>BEFF;
+  --color-lightprimary: #<span class="hljs-number">763</span>EBD20;
+  --color-lightsecondary: #<span class="hljs-number">49</span>BEFF20;
+  --color-primary-rgb: <span class="hljs-number">118</span>, <span class="hljs-number">62</span>, <span class="hljs-number">189</span>;
+  --color-secondary-rgb: <span class="hljs-number">149</span>, <span class="hljs-number">207</span>, <span class="hljs-number">213</span>;
+}
+
+[data-color-theme=<span class="hljs-string">"GREEN_THEME"</span>] {
+  --color-primary: #<span class="hljs-number">0</span>A7EA4;
+  --color-primary-emphasis: #<span class="hljs-number">096</span>b8b;
+  --color-secondary-emphasis: #d4e069;
+  --color-secondary: #CCDA4E;
+  --color-lightprimary: #<span class="hljs-number">0</span>A7EA420;
+  --color-lightsecondary: #CCDA4E20;
+  --color-primary-rgb: <span class="hljs-number">10</span>, <span class="hljs-number">126</span>, <span class="hljs-number">164</span>;
+  --color-secondary-rgb: <span class="hljs-number">204</span>, <span class="hljs-number">218</span>, <span class="hljs-number">78</span>;
+
+}
+
+[data-color-theme=<span class="hljs-string">"CYAN_THEME"</span>] {
+  --color-primary: #<span class="hljs-number">01</span>C0C8;
+  --color-primary-emphasis: #<span class="hljs-number">01</span>a3aa;
+  --color-secondary-emphasis: #d58066;
+  --color-secondary: #FB9678;
+  --color-lightprimary: #<span class="hljs-number">01</span>C0C820;
+  --color-lightsecondary: #FB967820;
+  --color-primary-rgb: <span class="hljs-number">1</span>, <span class="hljs-number">192</span>, <span class="hljs-number">200</span>;
+  --color-secondary-rgb: <span class="hljs-number">251</span>, <span class="hljs-number">150</span>, <span class="hljs-number">120</span>;
+}
+
+[data-color-theme=<span class="hljs-string">"ORANGE_THEME"</span>] {
+  --color-primary: #FA896B;
+  --color-primary-emphasis: #d5745b;
+  --color-secondary-emphasis: #<span class="hljs-number">00639</span>e;
+  --color-secondary: #<span class="hljs-number">0074</span>BA;
+  --color-lightprimary: #FA896B20;
+  --color-lightsecondary: #<span class="hljs-number">0074</span>BA20;
+  --color-primary-rgb: <span class="hljs-number">250</span>, <span class="hljs-number">137</span>, <span class="hljs-number">107</span>;
+  --color-secondary-rgb: <span class="hljs-number">0</span>, <span class="hljs-number">116</span>, <span class="hljs-number">186</span>;
+}
+                </code>
+              </pre>
             </div>
           </div>
-
-
-          <div class="mt-4 card">
+          <div class="alert alert-primary mt-4">
+            To change primary and secondary color you have to change in the
+            file, which is explain below:
+          </div>
+          <div class="card mt-4">
             <div class="card-body">
-              <h4 class="card-title">Light Theme Variables Settings</h4>
+              <h4 class="card-title">Override Theme Colors</h4>
               <h5 class="card-subtitle mt-2 text-muted mb-4">
-                For any change in colors :
-                <span class="text-dark font-medium">src/theme/LightThemeColors.tsx</span>
+                For change , go to :
+                <span class="text-dark font-medium">src/css/theme/default-colors.css</span>
               </h5>
-              <pre>
-                    <code class="language-js py-0">
-{
-  name: 'BLUE_THEME',
-  palette: {
-    primary: {
-      main: '#5D87FF',
-      light: '#ECF2FF',
-      dark: '#4570EA',
-      contrastText: '#ffffff',
-    },
-    secondary: {
-      main: '#49BEFF',
-      light: '#E8F7FF',
-      dark: '#23afdb',
-      contrastText: '#ffffff',
-    },
-  },
-},
-                      
-                            </code>
-                        </pre>
+
+              <pre>                            <code class="language-js py-0">
+[data-color-theme=<span class="hljs-string">"BLUE_THEME"</span>]{
+  --color-primary: #<span class="hljs-number">00</span>A1FF;
+  --color-secondary: #<span class="hljs-number">8965E5</span>;
+  --color-primary-emphasis:#<span class="hljs-number">0091E5</span>;   
+  --color-secondary-emphasis:#<span class="hljs-number">673</span>ADE;
+  --color-lightprimary:#<span class="hljs-number">00</span>A1FF20;
+  --color-lightsecondary:#<span class="hljs-number">8965E520</span>; 
+  }
+                          </code>
+                      </pre>
             </div>
           </div>
-
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">Dark Theme Variables Settings</h4>
-              <h5 class="card-subtitle mt-2 text-muted mb-4">
-                For any change in colors :
-                <span class="text-dark font-medium">src/theme/DarkThemeColors.tsx</span>
-              </h5>
-              <pre>
-                    <code class="language-js py-0">
-{
-  name: 'BLUE_THEME',
-  palette: {
-    primary: {
-      main: '#5D87FF',
-      light: '#253662',
-      dark: '#4570EA',
-      contrastText: '#ffffff',
-    },
-    secondary: {
-      main: '#49BEFF',
-      light: '#1C455D',
-      dark: '#23afdb',
-      contrastText: '#ffffff',
-    },
-    background: {
-      default: '#2A3447',
-      dark: '#2A3547',
-      paper: '#2A3447',
-    },
-  },
-},                    
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-
           <!-- ============================================================== -->
           <!-- End Of Page Content -->
           <!-- ============================================================== -->

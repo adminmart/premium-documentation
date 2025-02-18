@@ -143,10 +143,10 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html"><i
-                      class="ti ti-link me-3 fs-4"></i>
-                    API-Calls
-                  </a>
+                                    <a class="nav-link sidebar-link d-flex align-items-center"
+                                        href="docs-api-calls.html"><i class="ti ti-link me-3 fs-4"></i>
+                                        API-Calls
+                                    </a>
                                 </li>
                                 <li class="sidebar-item">
                                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-auth.html"><i
@@ -278,10 +278,11 @@
                                         </a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html">
-                      <i class="ti ti-link me-3 fs-4"></i>
-                      API-Calls
-                    </a>
+                                        <a class="nav-link sidebar-link d-flex align-items-center"
+                                            href="docs-api-calls.html">
+                                            <i class="ti ti-link me-3 fs-4"></i>
+                                            API-Calls
+                                        </a>
                                     </li>
                                     <li class="sidebar-item">
                                         <a class="nav-link sidebar-link d-flex align-items-center"
@@ -352,62 +353,60 @@
                     <div class="mt-4 card">
                         <div class="card-body">
                             <h4 class="card-title">1. How does it work?</h4>
-                            <h5 class="card-subtitle mt-2 text-muted">SWR has been configured in the folder:<span
-                                    class="text-dark font-medium">app/api/globalFetcher.ts</span></h5>
-                            <h5 class="card-subtitle mt-3 mb-4 text-muted">To use SWR on a page, you need to import it
-                                and make a call. After that, you need to make calls to swr using <span
-                                    class="text-dark font-medium">http.get('path') or http.post('path')</span> see below
-                                implementation.</h5>
-                            <pre>            <code class="language-js py-0 hljs javascript">
+                            <h5 class="card-subtitle mt-2 text-muted">You can implement swr like this: <span
+                                    class="text-dark font-medium">src/app/context/ContactContext/index.tsx</span></h5>
 
-<span class="hljs-keyword">import</span> useSWR <span class="hljs-keyword">from</span> <span class="hljs-string">'swr'</span>;  <span class="hljs-comment">// 1. import swr</span>
+                            <pre>            <code class="language-js py-0 hljs javascript">
+        
+<span class="hljs-keyword">import</span> useSWR <span class="hljs-keyword">from</span> <span class="hljs-string">'swr'</span>;
 <span class="hljs-keyword">import</span> { uniqueId } <span class="hljs-keyword">from</span> <span class="hljs-string">'lodash'</span>;
 <span class="hljs-keyword">import</span> { sub } <span class="hljs-keyword">from</span> <span class="hljs-string">'date-fns'</span>;
-                            
-<span class="hljs-keyword">const</span> API_URL = <span class="hljs-string">'/api/data/chat/ChatData'</span>;  <span class="hljs-comment">// 2. change it to live service URL</span>
-                            
- <span class="hljs-comment">// Fetcher function using fetch API</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> getFetcher = <span class="hljs-function">(<span class="hljs-params">url: string</span>) =&gt;</span>
-   fetch(url).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
-    <span class="hljs-keyword">if</span> (!res.ok) {
-       <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'Failed to fetch data'</span>);
-     }
-    <span class="hljs-keyword">return</span> res.json();
-    });
-                            
-                            
-  <span class="hljs-comment">// 3. call to fetch data</span>
-                            
-  <span class="hljs-comment">//fetch chat data using SWR</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> useChats = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
-     <span class="hljs-keyword">const</span> { data, error } = useSWR(API_URL, getFetcher);
-                            
-      <span class="hljs-keyword">return</span> {
-        data,
-        error,
-        <span class="hljs-attr">isLoading</span>: !data &amp;&amp; !error,
-      };
-    };
-                            
-  <span class="hljs-comment">// use data in HTML</span>
+<span class="hljs-keyword">import</span> { getFetcher} <span class="hljs-keyword">from</span> <span class="hljs-string">'src/api/globalFetcher'</span>;
+
+<span class="hljs-comment">// 3. call to fetch data</span>
+<span class="hljs-keyword">const</span> {<span class="hljs-attr">data</span>:contactsData,<span class="hljs-attr">isLoading</span>:isContactsLoading,<span class="hljs-attr">error</span>:contactsError,mutate} = useSWR(<span class="hljs-string">'/api/data/contacts/contactsData'</span>,getFetcher);
+
+useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  
+  <span class="hljs-keyword">if</span>(contactsData){
+    <span class="hljs-keyword">const</span> allContacts = contactsData.data;
+    setContacts(allContacts);
+    <span class="hljs-keyword">if</span>(contacts.length===<span class="hljs-number">0</span>){
+      <span class="hljs-keyword">const</span> initialStarredContacts = allContacts.filter(<span class="hljs-function">(<span class="hljs-params">contact: { starred: any; }</span>) =&gt;</span> contact.starred).map(<span class="hljs-function">(<span class="hljs-params">contact: { id: any; }</span>) =&gt;</span> contact.id);
+      setStarredContacts(initialStarredContacts);
+      setSelectedContact(allContacts[<span class="hljs-number">0</span>]);
+    }
+
+  }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(contactsError){
+    setLoading(isContactsLoading);
+    setError(contactsError);
+  }<span class="hljs-keyword">else</span>{
+    setLoading(isContactsLoading);
+  }
+
+}, [contactsData,contactsError]);
+
+<span class="hljs-comment">// use data in HTML</span>
 {<span class="hljs-built_in">Object</span>.keys(data).map(<span class="hljs-function">(<span class="hljs-params">key, index</span>) =&gt;</span> {
-  <span class="hljs-keyword">return</span> (
-  <react.fragment key="{index}">
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">React.Fragment</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span>&gt;</span>
 
       ...
       ...
-                                  
-  </react.fragment>
-   );
+      
+      <span class="hljs-tag">&lt;/<span class="hljs-name">React.Fragment</span>&gt;</span></span>
+    );
+      ...
+      ...
 
-     ...
-     ...
-
-   })
- };
-                          </code>
-                    </pre>
+    })
+};
+                                  </code>
+                            </pre>
                         </div>
+
+
+
                     </div>
                     <!-- ============================================================== -->
                     <!-- End Page wrapper  -->

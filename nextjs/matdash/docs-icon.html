@@ -7,12 +7,12 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords"
-        content="Adminmart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, MatDash admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
+        content="AdminMart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, MatDashadmin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
     <meta name="description"
-        content="MatDash is powerful and clean admin dashboard template, inpired from Google's Material Design" />
+        content="MatDashis powerful and clean admin dashboard template, inpired from Google's Material Design" />
     <meta name="robots" content="noindex,nofollow" />
-    <title>MatDash Admin Template by Adminmart.com</title>
-    <link rel="canonical" href="https://adminmart.com/product/matdash-tailwind-react-admin-template/" />
+    <title>MatDashAdmin Template by AdminMart.com</title>
+    <link rel="canonical" href="https://adminmart.com/product/matdash-next-js-admin-dashboard-template/" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/matdash/favicon.ico" />
     <!-- This page css -->
@@ -21,6 +21,7 @@
     <link href="../../styles/dist/css/style.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../styles/assets/highlights/atom-one-dark.min.css" />
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,6 +32,7 @@
 </head>
 
 <body>
+
 
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
@@ -114,6 +116,11 @@
                                             <a href="docs-icon.html" class="nav-link sub-link"><i
                                                     class="ti ti-point me-3"></i>
                                                 <span class="hide-menu"> Icons </span></a>
+                                        </li>
+                                        <li class="sidebar-item mb-0">
+                                            <a href="docs-tailwind.html" class="nav-link sub-link"><i
+                                                    class="ti ti-point me-3"></i>
+                                                <span class="hide-menu">Tailwind</span></a>
                                         </li>
                                     </ul>
                                 </li>
@@ -247,6 +254,11 @@
                                                         class="ti ti-point me-3"></i>
                                                     <span class="hide-menu"> Icons </span></a>
                                             </li>
+                                            <li class="sidebar-item mb-0">
+                                                <a href="docs-tailwind.html" class="nav-link sub-link"><i
+                                                        class="ti ti-point me-3"></i>
+                                                    <span class="hide-menu">Tailwind</span></a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="sidebar-item">
@@ -349,44 +361,32 @@
                     <!-- ============================================================== -->
                     <!-- Start Page Content -->
                     <!-- ============================================================== -->
-                    <h4 class="mb-4 pb-2">Typography</h3>
-                        <div class="mt-4 card">
-                            <div class="card-body">
-                                <h4>Google Fonts</h4>
-                                <h5 class="card-subtitle mt-4 text-muted">1) Change the google fonts link as per your
-                                    choice : <span class="text-dark font-medium">index.html </span></h5>
-                                <pre>                        <code class="language-html py-0 hljs xml">
-<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span>
-        <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap"</span>
-        <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
-        /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+                    <h4 class="mb-4 pb-2">Icons</h4>
+                    <div class="mt-4 card">
+                        <div class="card-body">
+                            <h4 class="card-title">1.Solar Icons</h4>
+                            <a href="https://icones.js.org/collection/solar"
+                                class="font-16">https://icones.js.org/collection/solar</a>
+                            <pre>                        <code class="language-js py-0 hljs javascript">
+<span class="hljs-keyword">import</span> { Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">"@iconify/react"</span>;
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-                        </code>
-                    </pre>
+<span class="hljs-comment">// ----------------------------------------------------------------------</span>
 
-                                <h5 class="card-subtitle mt-4 text-muted">2) Change Font family :<span
-                                        class="text-dark font-medium"> tailwind.config.ts </span></h5>
-                                <pre>                        <code class="language-js py-0 hljs javascript">
-    fontFamily: {
-      <span class="hljs-attr">sans</span>: [<span class="hljs-string">'Manrope'</span>, <span class="hljs-string">'system-ui'</span>, <span class="hljs-string">'serif'</span>], <span class="hljs-comment">// Define a custom sans-serif font family</span>
-    },
-                        </code>
-                    </pre>
-
-                            </div>
+<span class="hljs-keyword">const</span> SolarIcons = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">return</span>(
+        &lt;Icon icon="solar:course-up-line-duotone" height={16} /&gt;
+        &lt;Icon icon="solar:pie-chart-3-line-duotone" height={16} /&gt;
+        &lt;Icon icon="solar:cursor-line-duotone" height={16} /&gt; 
+        &lt;Icon icon="solar:pie-chart-3-line-duotone" height={16} /&gt;
+    );
+}
+                                </code>
+                            </pre>
                         </div>
-                        <!-- ============================================================== -->
-                        <!-- End Of Page Content -->
-                        <!-- ============================================================== -->
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Of Page Content -->
+                    <!-- ============================================================== -->
 
                 </div>
             </div>
