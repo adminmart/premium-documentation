@@ -12,9 +12,9 @@
     content="Modernize is powerful and clean admin dashboard template, inpired from Google's Material Design" />
   <meta name="robots" content="noindex,nofollow" />
   <title>Modernize Admin Template by Adminmart.com</title>
-  <link rel="canonical" href="https://adminmart.com/product/modernize-angular-material-dashboard/" />
+  <link rel="canonical" href="https://adminmart.com/product/matdash-vuetify-nuxt-js-admin-template/" />
   <!-- Favicon icon -->
-  <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/modernize/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/matdash/favicon.ico" />
   <!-- This page css -->
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../../styles/assets/simplebar/simplebar/dist/simplebar.css" />
@@ -27,9 +27,12 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
+
+
   <!-- ============================================================== -->
   <!-- Main wrapper - style you can find in pages.scss -->
   <!-- ============================================================== -->
@@ -51,7 +54,7 @@
             <a href="index.html">
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
-                <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+                <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
               </b>
               <!--End Logo icon -->
             </a>
@@ -86,27 +89,6 @@
                 </li>
                 <!--Theme UI-->
                 <li class="nav-small-cap mt-4">
-                  <span class="hide-menu">Customization</span>
-                </li>
-
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
-                      class="ti ti-settings me-3 fs-4"></i>Customize Theme
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
-                      class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-changes-skin-color.html"><i
-                      class="ti ti-palette me-3 fs-4"></i>Global Skin Color
-                  </a>
-                </li>
-
-                <!--Theme UI-->
-                <li class="nav-small-cap mt-4">
                   <span class="hide-menu">THEME UI</span>
                 </li>
                 <li class="sidebar-item position-relative">
@@ -132,10 +114,35 @@
                     </li>
                   </ul>
                 </li>
-
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
+                      class="ti ti-settings me-3 fs-4"></i>Customize Theme
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
+                      class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
+                  </a>
+                </li>
                 <!--Development-->
                 <li class="nav-small-cap mt-4">
                   <span class="hide-menu">DEVELOPMENT</span>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-routing.html"><i
+                      class="ti ti-route me-3 fs-4"></i> Routing</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-multi-language.html"><i
+                      class="ti ti-text-recognition me-3 fs-4"></i> Multi
+                    Language
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html">
+                    <i class="ti ti-link me-3 fs-4"></i>
+                    API Calls
+                  </a>
                 </li>
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
@@ -165,7 +172,7 @@
               <a href="index.html">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
-                  <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+                  <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
                 </b>
                 <!--End Logo icon -->
               </a>
@@ -200,27 +207,6 @@
                   </li>
                   <!--Theme UI-->
                   <li class="nav-small-cap mt-4">
-                    <span class="hide-menu">Customization</span>
-                  </li>
-
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
-                        class="ti ti-settings me-3 fs-4"></i>Customize Theme
-                    </a>
-                  </li>
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
-                        class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
-                    </a>
-                  </li>
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-changes-skin-color.html"><i
-                        class="ti ti-palette me-3 fs-4"></i>Global Skin Color
-                    </a>
-                  </li>
-
-                  <!--Theme UI-->
-                  <li class="nav-small-cap mt-4">
                     <span class="hide-menu">THEME UI</span>
                   </li>
                   <li class="sidebar-item position-relative">
@@ -246,10 +232,36 @@
                       </li>
                     </ul>
                   </li>
-
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
+                        class="ti ti-settings me-3 fs-4"></i>Customize Theme
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
+                        class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
+                    </a>
+                  </li>
                   <!--Development-->
                   <li class="nav-small-cap mt-4">
                     <span class="hide-menu">DEVELOPMENT</span>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-routing.html"><i
+                        class="ti ti-route me-3 fs-4"></i> Routing
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-multi-language.html"><i
+                        class="ti ti-text-recognition me-3 fs-4"></i> Multi
+                      Language
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html">
+                      <i class="ti ti-link me-3 fs-4"></i>
+                      API Calls
+                    </a>
                   </li>
                   <li class="sidebar-item">
                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
@@ -286,7 +298,7 @@
           <a href="index.html">
             <b class="logo-icon d-lg-none d-block">
               <!-- Dark Logo icon -->
-              <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+              <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
             </b>
             <!--End Logo icon -->
           </a>
@@ -307,41 +319,67 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
-          <h4 class="mb-4 pb-2">Typography</h4>
+          <h4 class="mb-4 pb-2">Routing</h4>
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">Google fonts</h4>
-              <div class="border-2 border-start border-primary bg-light rounded p-3 lh-base mt-4">
-                To execute Gulp, navigate to the directory containing the
-                package.json file. Open a command prompt in that location and
-                enter the command "gulp" as indicated below. For instructions
-                on installing Gulp, please refer to link
-                <a href="./docs-start.html">Gulp</a>.
-              </div>
+              <h4 class="card-title">1. How to add page to verticle sidebar ?</h4>
+              <pre>                            <code class="language-js py-0 hljs javascript">
+// ----------------------------------------------------
+// File: /src/layouts/full/vertical-sidebar/sidebarItem.ts
+// ----------------------------------------------------
 
-              <h5 class="card-subtitle mt-4 text-muted">
-                1) Change Font family :
-                <span class="text-dark font-medium">src/asssets/scss/_variables.scss</span>
-              </h5>
+const sidebarItem: menu[] = [
+    {
+        header: 'dashboards',
+        id: 1,
+        children: [
+            {
+                title: 'Dashboard1',
+                icon: 'widget-add-line-duotone',
+                to: '/dashboards/dashboard1'
+            },
+            {
+                title: 'Dashboard2',
+                icon: 'chart-line-duotone',
+                to: '/dashboards/dashboard2'
+            },
+            {
+                title: 'Dashboard3',
+                icon: 'screencast-2-line-duotone',
+                to: '/dashboards/dashboard3'
+            },
+          ]
+      }
+]
+                    </code>
+                </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">2. How to add page to horizontal sidebar ?</h4>
               <pre>
-                        <code class="language-js py-0">
-// Font URL
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
-                          
-$font-family-sans-serif: "Plus Jakarta Sans", sans-serif !default;
-                        </code>
-                    </pre>
+                            <code class="language-js py-0">
+// ------------------------------------------------------------
+// File: /src/layouts/full/horizontal-sidebar/horizontalItems.ts
+// ------------------------------------------------------------
 
-              <div class="border-2 border-start border-success bg-light rounded p-3 lh-base mt-4 fs-6">
-                Now, save your variable.scss file and verify the changes in
-                the browser.
-              </div>
-
-              <div class="border-2 border-start border-primary bg-light rounded p-3 lh-base mt-4 fs-6">
-                To alter the font selection within the theme, insert the URL
-                linking to your desired fonts and update the font family
-                attribute accordingly within the variable.scss file.
-              </div>
+const sidebarItem: menu[] = [
+    {
+      title: 'Dashboard',
+      icon: HomeIcon,
+      to: '#',
+      children: [
+          {
+              title: 'Modern',
+              icon: CircleIcon,
+              to: '/dashboards/modern'
+          }
+      ]
+    }
+]
+                            </code>
+                        </pre>
             </div>
           </div>
           <!-- ============================================================== -->
@@ -352,6 +390,7 @@ $font-family-sans-serif: "Plus Jakarta Sans", sans-serif !default;
       <!-- ============================================================== -->
       <!-- End Container fluid  -->
       <!-- ============================================================== -->
+
     </div>
     <!-- ============================================================== -->
     <!-- End Page wrapper  -->

@@ -12,9 +12,9 @@
     content="Modernize is powerful and clean admin dashboard template, inpired from Google's Material Design" />
   <meta name="robots" content="noindex,nofollow" />
   <title>Modernize Admin Template by Adminmart.com</title>
-  <link rel="canonical" href="https://adminmart.com/product/modernize-angular-material-dashboard/" />
+  <link rel="canonical" href="https://adminmart.com/product/matdash-vuetify-nuxt-js-admin-template/" />
   <!-- Favicon icon -->
-  <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/modernize/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/matdash/favicon.ico" />
   <!-- This page css -->
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../../styles/assets/simplebar/simplebar/dist/simplebar.css" />
@@ -30,6 +30,7 @@
 </head>
 
 <body>
+
   <!-- ============================================================== -->
   <!-- Main wrapper - style you can find in pages.scss -->
   <!-- ============================================================== -->
@@ -51,7 +52,7 @@
             <a href="index.html">
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
-                <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+                <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
               </b>
               <!--End Logo icon -->
             </a>
@@ -86,27 +87,6 @@
                 </li>
                 <!--Theme UI-->
                 <li class="nav-small-cap mt-4">
-                  <span class="hide-menu">Customization</span>
-                </li>
-
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
-                      class="ti ti-settings me-3 fs-4"></i>Customize Theme
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
-                      class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-changes-skin-color.html"><i
-                      class="ti ti-palette me-3 fs-4"></i>Global Skin Color
-                  </a>
-                </li>
-
-                <!--Theme UI-->
-                <li class="nav-small-cap mt-4">
                   <span class="hide-menu">THEME UI</span>
                 </li>
                 <li class="sidebar-item position-relative">
@@ -132,14 +112,42 @@
                     </li>
                   </ul>
                 </li>
-
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
+                      class="ti ti-settings me-3 fs-4"></i>Customize Theme
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
+                      class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
+                  </a>
+                </li>
                 <!--Development-->
                 <li class="nav-small-cap mt-4">
                   <span class="hide-menu">DEVELOPMENT</span>
                 </li>
                 <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-routing.html"><i
+                      class="ti ti-route me-3 fs-4"></i> Routing</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-multi-language.html"><i
+                      class="ti ti-text-recognition me-3 fs-4"></i> Multi
+                    Language
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html">
+                    <i class="ti ti-link me-3 fs-4"></i>
+                    API Calls
+                  </a>
+                </li>
+                <!--Support-->
+
+                <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
-                      class="ti ti-refresh-dot me-3 fs-4"></i>Changelog</a>
+                      class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
+                      class="badge bg-secondary f-s-12">PRO</span></a>
                 </li>
               </ul>
             </nav>
@@ -165,7 +173,7 @@
               <a href="index.html">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
-                  <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+                  <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
                 </b>
                 <!--End Logo icon -->
               </a>
@@ -200,27 +208,6 @@
                   </li>
                   <!--Theme UI-->
                   <li class="nav-small-cap mt-4">
-                    <span class="hide-menu">Customization</span>
-                  </li>
-
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
-                        class="ti ti-settings me-3 fs-4"></i>Customize Theme
-                    </a>
-                  </li>
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
-                        class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
-                    </a>
-                  </li>
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-changes-skin-color.html"><i
-                        class="ti ti-palette me-3 fs-4"></i>Global Skin Color
-                    </a>
-                  </li>
-
-                  <!--Theme UI-->
-                  <li class="nav-small-cap mt-4">
                     <span class="hide-menu">THEME UI</span>
                   </li>
                   <li class="sidebar-item position-relative">
@@ -246,14 +233,42 @@
                       </li>
                     </ul>
                   </li>
-
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
+                        class="ti ti-settings me-3 fs-4"></i>Customize Theme
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
+                        class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
+                    </a>
+                  </li>
                   <!--Development-->
                   <li class="nav-small-cap mt-4">
                     <span class="hide-menu">DEVELOPMENT</span>
                   </li>
                   <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-routing.html"><i
+                        class="ti ti-route me-3 fs-4"></i> Routing
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-multi-language.html"><i
+                        class="ti ti-text-recognition me-3 fs-4"></i> Multi
+                      Language
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html">
+                      <i class="ti ti-link me-3 fs-4"></i>
+                      API Calls
+                    </a>
+                  </li>
+                  <!--Support-->
+                  <li class="sidebar-item">
                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
-                        class="ti ti-refresh-dot me-3 fs-4"></i>Changelog</a>
+                        class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
+                        class="badge bg-secondary f-s-12">PRO</span></a>
                   </li>
                 </ul>
               </nav>
@@ -286,7 +301,7 @@
           <a href="index.html">
             <b class="logo-icon d-lg-none d-block">
               <!-- Dark Logo icon -->
-              <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+              <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
             </b>
             <!--End Logo icon -->
           </a>
@@ -307,41 +322,267 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
-          <h4 class="mb-4 pb-2">Typography</h4>
+          <h4 class="mb-4 pb-2">Theme Settings</h4>
+
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">Google fonts</h4>
-              <div class="border-2 border-start border-primary bg-light rounded p-3 lh-base mt-4">
-                To execute Gulp, navigate to the directory containing the
-                package.json file. Open a command prompt in that location and
-                enter the command "gulp" as indicated below. For instructions
-                on installing Gulp, please refer to link
-                <a href="./docs-start.html">Gulp</a>.
-              </div>
+              <h4 class="card-title">Customizer Usage</h4>
 
-              <h5 class="card-subtitle mt-4 text-muted">
-                1) Change Font family :
-                <span class="text-dark font-medium">src/asssets/scss/_variables.scss</span>
-              </h5>
+              <div class="row mt-4">
+                <div class="col-md-4">
+                  <img alt="customizer" class="border rounded img-fluid"
+                    src="../../styles/dist/images/matdash/app-customizer.jpg" />
+                </div>
+                <div class="col-md-8">
+                  <p class="fs-6 text-muted">
+                    The Customizer enables you and your customers to modify
+                    the primary colors, themes, skins, layout options, and
+                    overall appearance of the template in real time.
+                  </p>
+                  <p class="fs-6 text-muted">
+                    While we recommend using this for enhanced customization,
+                    its use is entirely optional. Please review both scenarios
+                    carefully to understand its usage and benefits.
+                  </p>
+
+                  <div class="border-2 border-start border-primary bg-light rounded p-3">
+                    <span class="fw-semibold">Note : </span>
+
+                    <p class="fs-6 mt-2">You must have below files in your project :</p>
+                    <p class="fs-6 mt-2 mb-0">1. config.ts <span class="fw-medium d-block">Path:
+                        /config.ts</span></p>
+                    <p class="fs-6 mt-2">2. Customizer.vue <span class="fw-medium d-block">Path:
+                        components/lc/Full/customizer/Customizer.vue</span></p>
+                    <p class="fs-6 mt-2">3. customizer.ts <span class="fw-medium d-block">Path:
+                        packages/main/stores/customizer.ts</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">1. Default settings</h4>
               <pre>
-                        <code class="language-js py-0">
-// Font URL
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
-                          
-$font-family-sans-serif: "Plus Jakarta Sans", sans-serif !default;
-                        </code>
-                    </pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
 
-              <div class="border-2 border-start border-success bg-light rounded p-3 lh-base mt-4 fs-6">
-                Now, save your variable.scss file and verify the changes in
-                the browser.
-              </div>
-
-              <div class="border-2 border-start border-primary bg-light rounded p-3 lh-base mt-4 fs-6">
-                To alter the font selection within the theme, insert the URL
-                linking to your desired fonts and update the font family
-                attribute accordingly within the variable.scss file.
-              </div>
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false,
+  setHorizontalLayout: false, // Horizontal layout
+  setRTLLayout: false,
+  actTheme: 'BLUE_THEME',
+  boxed: true,
+  setBorderCard: false
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">
+                2. How to set Dark theme ?
+              </h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false,
+  setHorizontalLayout: false, 
+  setRTLLayout: false,
+  actTheme: 'DARK_BLUE_THEME', // Change is here
+  boxed: true,
+  setBorderCard: false
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">3. How to change color theme ?</h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false,
+  setHorizontalLayout: false, 
+  setRTLLayout: false,
+  // BLUE_THEME, AQUA_THEME, GREEN_THEME, PURPLE_THEME, ORANGE_THEME, CYAN_THEME
+  actTheme: 'AQUA_THEME',  // Change is here // You can  use any of above theme
+  boxed: true,
+  setBorderCard: false
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">4. How to set Horizontal layout ?</h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false,
+  setHorizontalLayout: true, // change is here
+  setRTLLayout: false,
+  actTheme: 'BLUE_THEME',
+  boxed: true,
+  setBorderCard: false
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">5. How to set RTL (Right To Left) layout ?</h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false,
+  setHorizontalLayout: false, 
+  setRTLLayout: true,  // change is here
+  actTheme: 'BLUE_THEME',
+  boxed: true,
+  setBorderCard: false
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">6. How to set Fullwidth layout ?</h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false,
+  setHorizontalLayout: false, 
+  setRTLLayout: false,
+  actTheme: 'BLUE_THEME',
+  boxed: false,  // change is here
+  setBorderCard: false
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">7. How to set Boxed layout ?</h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false,
+  setHorizontalLayout: false, 
+  setRTLLayout: false,
+  actTheme: 'BLUE_THEME',
+  boxed: true, // change is here
+  setBorderCard: false
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">8. How to set Minisidebar ?</h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: true, // change is here
+  setHorizontalLayout: false, 
+  setRTLLayout: false,
+  actTheme: 'BLUE_THEME',
+  boxed: true,
+  setBorderCard: false
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">9. How to set card with shadow ?</h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false, 
+  setHorizontalLayout: false, 
+  setRTLLayout: false,
+  actTheme: 'BLUE_THEME',
+  boxed: true,
+  setBorderCard: false // change is here
+};
+                            </code>
+                        </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">10. How to set card with border ?</h4>
+              <pre>
+                            <code class="language-js py-0">
+// ----------------------------------------------------
+// File: config.ts
+// ----------------------------------------------------
+const config: ConfigProps = {
+  Sidebar_drawer: null,
+  Customizer_drawer: false,
+  mini_sidebar: false, 
+  setHorizontalLayout: false, 
+  setRTLLayout: false,
+  actTheme: 'BLUE_THEME',
+  boxed: true,
+  setBorderCard: true // change is here
+};
+                            </code>
+                        </pre>
             </div>
           </div>
           <!-- ============================================================== -->

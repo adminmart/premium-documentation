@@ -12,9 +12,9 @@
     content="Modernize is powerful and clean admin dashboard template, inpired from Google's Material Design" />
   <meta name="robots" content="noindex,nofollow" />
   <title>Modernize Admin Template by Adminmart.com</title>
-  <link rel="canonical" href="https://adminmart.com/product/modernize-angular-material-dashboard/" />
+  <link rel="canonical" href="https://adminmart.com/product/matdash-vuetify-nuxt-js-admin-template/" />
   <!-- Favicon icon -->
-  <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/modernize/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/matdash/favicon.ico" />
   <!-- This page css -->
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../../styles/assets/simplebar/simplebar/dist/simplebar.css" />
@@ -27,9 +27,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
+
   <!-- ============================================================== -->
   <!-- Main wrapper - style you can find in pages.scss -->
   <!-- ============================================================== -->
@@ -51,7 +53,7 @@
             <a href="index.html">
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
-                <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+                <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
               </b>
               <!--End Logo icon -->
             </a>
@@ -86,27 +88,6 @@
                 </li>
                 <!--Theme UI-->
                 <li class="nav-small-cap mt-4">
-                  <span class="hide-menu">Customization</span>
-                </li>
-
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
-                      class="ti ti-settings me-3 fs-4"></i>Customize Theme
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
-                      class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-changes-skin-color.html"><i
-                      class="ti ti-palette me-3 fs-4"></i>Global Skin Color
-                  </a>
-                </li>
-
-                <!--Theme UI-->
-                <li class="nav-small-cap mt-4">
                   <span class="hide-menu">THEME UI</span>
                 </li>
                 <li class="sidebar-item position-relative">
@@ -132,10 +113,35 @@
                     </li>
                   </ul>
                 </li>
-
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
+                      class="ti ti-settings me-3 fs-4"></i>Customize Theme
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
+                      class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
+                  </a>
+                </li>
                 <!--Development-->
                 <li class="nav-small-cap mt-4">
                   <span class="hide-menu">DEVELOPMENT</span>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-routing.html"><i
+                      class="ti ti-route me-3 fs-4"></i> Routing</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-multi-language.html"><i
+                      class="ti ti-text-recognition me-3 fs-4"></i> Multi
+                    Language
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html">
+                    <i class="ti ti-link me-3 fs-4"></i>
+                    API Calls
+                  </a>
                 </li>
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
@@ -165,7 +171,7 @@
               <a href="index.html">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
-                  <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+                  <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
                 </b>
                 <!--End Logo icon -->
               </a>
@@ -200,27 +206,6 @@
                   </li>
                   <!--Theme UI-->
                   <li class="nav-small-cap mt-4">
-                    <span class="hide-menu">Customization</span>
-                  </li>
-
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
-                        class="ti ti-settings me-3 fs-4"></i>Customize Theme
-                    </a>
-                  </li>
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
-                        class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
-                    </a>
-                  </li>
-                  <li class="sidebar-item">
-                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-changes-skin-color.html"><i
-                        class="ti ti-palette me-3 fs-4"></i>Global Skin Color
-                    </a>
-                  </li>
-
-                  <!--Theme UI-->
-                  <li class="nav-small-cap mt-4">
                     <span class="hide-menu">THEME UI</span>
                   </li>
                   <li class="sidebar-item position-relative">
@@ -246,10 +231,36 @@
                       </li>
                     </ul>
                   </li>
-
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-setting.html"><i
+                        class="ti ti-settings me-3 fs-4"></i>Customize Theme
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-logo.html"><i
+                        class="ti ti-adjustments-horizontal me-3 fs-4"></i>Change Logo
+                    </a>
+                  </li>
                   <!--Development-->
                   <li class="nav-small-cap mt-4">
                     <span class="hide-menu">DEVELOPMENT</span>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-routing.html"><i
+                        class="ti ti-route me-3 fs-4"></i> Routing
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-multi-language.html"><i
+                        class="ti ti-text-recognition me-3 fs-4"></i> Multi
+                      Language
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html">
+                      <i class="ti ti-link me-3 fs-4"></i>
+                      API Calls
+                    </a>
                   </li>
                   <li class="sidebar-item">
                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
@@ -286,7 +297,7 @@
           <a href="index.html">
             <b class="logo-icon d-lg-none d-block">
               <!-- Dark Logo icon -->
-              <img src="../../styles/dist/images/modernize/logo-dark.svg" alt="homepage" class="dark-logo" />
+              <img src="../../styles/dist/images/matdash/logo-dark.svg" alt="homepage" class="dark-logo" />
             </b>
             <!--End Logo icon -->
           </a>
@@ -307,51 +318,130 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
-          <h4 class="mb-4 pb-2">Typography</h4>
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">Google fonts</h4>
-              <div class="border-2 border-start border-primary bg-light rounded p-3 lh-base mt-4">
-                To execute Gulp, navigate to the directory containing the
-                package.json file. Open a command prompt in that location and
-                enter the command "gulp" as indicated below. For instructions
-                on installing Gulp, please refer to link
-                <a href="./docs-start.html">Gulp</a>.
-              </div>
+          <h4 class="mb-4 pb-2">Multi Language</h3>
+            <div class="mt-4 card">
+              <div class="card-body">
+                <h4 class="card-title">1. Add content</h4>
+                <pre>
+                        <code class="language-js py-0 ">
+// ----------------------------------------------------
+// File: utils/locales/ar.json  
+// ----------------------------------------------------  
 
-              <h5 class="card-subtitle mt-4 text-muted">
-                1) Change Font family :
-                <span class="text-dark font-medium">src/asssets/scss/_variables.scss</span>
-              </h5>
-              <pre>
-                        <code class="language-js py-0">
-// Font URL
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
-                          
-$font-family-sans-serif: "Plus Jakarta Sans", sans-serif !default;
+{
+    "Modern": "عصري",
+    "Contacts":"جهات الاتصال",
+    "Chats":"الدردشات"
+}
+
+</code>
+<code class="language-js py-0 mt-4">
+// ----------------------------------------------------
+// File: utils/locales/zh.json
+// ----------------------------------------------------  
+  
+{
+    "Modern": "現代的",
+    "Contacts":"聯繫人",
+    "Chats":"聊天記錄"
+}
+
+</code>
+<code class="language-js py-0 mt-4">
+// ----------------------------------------------------
+// File: utils/locales/en.json
+// ----------------------------------------------------  
+  
+{
+    "Modern": "Modern",
+    "Contacts":"Contacts",
+    "Chats":"Chats"
+}
+
+</code>
+<code class="language-js py-0 mt-4">
+// ----------------------------------------------------
+// File: utils/locales/fr.json
+// ---------------------------------------------------- 
+
+{
+    "Modern": "Moderne",
+    "Contacts":"Les contacts",
+    "Chats":"Chattes"
+}
                         </code>
                     </pre>
-
-              <div class="border-2 border-start border-success bg-light rounded p-3 lh-base mt-4 fs-6">
-                Now, save your variable.scss file and verify the changes in
-                the browser.
-              </div>
-
-              <div class="border-2 border-start border-primary bg-light rounded p-3 lh-base mt-4 fs-6">
-                To alter the font selection within the theme, insert the URL
-                linking to your desired fonts and update the font family
-                attribute accordingly within the variable.scss file.
               </div>
             </div>
-          </div>
-          <!-- ============================================================== -->
-          <!-- End Of Page Content -->
-          <!-- ============================================================== -->
+            <div class="mt-4 card">
+              <div class="card-body">
+                <h4 class="card-title">2. Usage</h4>
+                <pre class="mt-4">
+<code class="language-js py-0">
+// ----------------------------------------------------
+// File: components/lc/full/vertical-header/languageDD.vue
+// ---------------------------------------------------- 
+
+&lt;script setup lang="ts"&gt;
+  import { ref } from 'vue';
+  import { languageDD } from '@/_mockApis/headerData';
+  import flag1 from '@/assets/images/flag/icon-flag-en.svg';
+  import flag2 from '@/assets/images/flag/icon-flag-ro.svg'';
+  import flag3 from '@/assets/images/flag/icon-flag-zh.svg';
+  import flag4 from '@/assets/images/flag/icon-flag-fr.svg';
+&lt;/script&gt;
+  &lt;template&gt;
+      &lt;v-menu :close-on-content-click="false" location="bottom"&gt;
+        &lt;template v-slot:activator="{ props }"&gt;
+          &lt;v-btn icon variant="text" color="primary" class="custom-hover-primary" size="small" v-bind="props"&gt;
+            &lt;v-avatar size="22"&gt;
+                &lt;img v-if="$i18n.locale === 'en'" :src="flag1" :alt="$i18n.locale" width="22" height="22" class="obj-cover" /&gt;
+                &lt;img v-if="$i18n.locale === 'fr'" :src="flag4" :alt="$i18n.locale" width="22" height="22" class="obj-cover" /&gt;
+                &lt;img v-if="$i18n.locale === 'ro'" :src="flag2" :alt="$i18n.locale" width="22" height="22" class="obj-cover" /&gt;
+                &lt;img v-if="$i18n.locale === 'zh'" :src="flag3" :alt="$i18n.locale" width="22" height="22" class="obj-cover" /&gt;
+            &lt;/v-avatar&gt;
+          &lt;/v-btn&gt;
+        &lt;/template&gt;
+        &lt;v-sheet rounded="md" width="200" elevation="10"&gt;
+          &lt;v-list class="theme-list"&gt;
+            &lt;v-list-item
+              v-for="(item, index) in languageDD"
+              :key="index"
+              color="primary"
+              :active="$i18n.locale == item.value"
+              class="d-flex align-center"
+              @click="() =&gt; ($i18n.locale = item.value)"
+            &gt;
+                &lt;template v-slot:prepend&gt;
+                  &lt;v-avatar size="22"&gt;
+                    &lt;img :src="item.avatar" :alt="item.avatar" width="22" height="22" class="obj-cover" /&gt;
+                  &lt;/v-avatar>
+                &lt;/template>
+                &lt;v-list-item-title class="text-subtitle-1 font-weight-regular"&gt;
+                    {{ item.title }}
+                    &lt;span class="text-disabled text-subtitle-1 pl-2"&gt;({{ item.subtext }})&lt;/span&gt;
+                &lt;/v-list-item-title&gt;
+            &lt;/v-list-item&gt;
+          &lt;/v-list&gt;
+        &lt;/v-sheet&gt;
+      &lt;/v-menu&gt;
+  &lt;/template&gt;
+
+</code>
+
+                    </pre>
+              </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Of Page Content -->
+            <!-- ============================================================== -->
+
         </div>
       </div>
       <!-- ============================================================== -->
       <!-- End Container fluid  -->
       <!-- ============================================================== -->
+
     </div>
     <!-- ============================================================== -->
     <!-- End Page wrapper  -->
