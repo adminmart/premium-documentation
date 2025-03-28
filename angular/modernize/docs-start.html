@@ -332,95 +332,140 @@
               </ul>
             </div>
           </div>
+
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">2. Install</h4>
+              <h4 class="card-title">2. Installation</h4>
               <h5 class="card-subtitle mt-2 text-muted">
                 Open package folder and install its dependencies. We
                 recommanded yarn or npm.
               </h5>
-              <h5 class="mt-4 font-medium">1) Install with npm:</h5>
-              <pre>
-                            <code class="language-sh py-0">
+
+              <div class="table-responsive ">
+                <table class="table table-striped border mt-4 align-middle table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Script</th>
+                      <th scope="col">Project Folder</th>
+                    </tr>
+                  </thead>
+                  <tbody >
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex align-items-center">
+                          <h5 class="mb-0">Install npm</h5>
+                        </div>
+                      </th>
+                      <td>
+                        <pre class="mt-0">
+                          <code class="language-sh py-0">
 cd project-folder
 npm install
-                            </code>
+                          </code>
+                      </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> <h5 class="mb-0">Install angular/cli</h5></th>
+                      <td>
+                        <pre class="mt-0">
+                          <code class="language-sh py-0">
+npm install --global @angular/cli
+                          </code>
                         </pre>
-              <h5 class="mt-3 font-medium">2) Install with yarn:</h5>
-
-              <pre>
-                            <code class="language-sh py-0">
-cd project-folder
-yarn install
-                            </code>
-                        </pre>
-            </div>
-          </div>
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">3. Start</h4>
-              <h5 class="card-subtitle mt-2 text-muted">
-                Once npm install is done now you an run the app.
-              </h5>
-              <pre>
-                            <code class="language-sh py-0">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><h5 class="mb-0">Start</h5></th>
+                      <td>
+                        <pre class="mt-0">
+                          <code class="language-sh py-0">
 ng serve -o
-                            </code>
+                          </code>
                         </pre>
-              <h5 class="card-subtitle text-muted mt-4">
-                This command will start a local webserver
-                <span class="text-dark font-medium">http://localhost:4200</span>:
-              </h5>
-              <pre>
-                            <code class="language-sh py-0">
-Initial chunk files               | Names                 |  Raw size
-main.js                           | main                  | 124.52 kB |
-styles.css                        | styles                | 122.48 kB |
-polyfills.js                      | polyfills             |  90.20 kB |
-chunk-EPFQZFJ3.js                 | -                     |  42.79 kB |
-chunk-6XS54CRB.js                 | -                     |   3.63 kB |
-chunk-KIZ4YIJC.js                 | -                     |   1.66 kB |
-chunk-X7GAXGAG.js                 | -                     |   1.27 kB |
-chunk-VUJOFXKG.js                 | -                     | 938 bytes |
-
-                            | Initial total         | 387.49 kB
-
-Lazy chunk files                  | Names                 |  Raw size
-apps.routes-SD3OFR2B.js           | apps-routes           | 592.55 kB |
-forms.routes-QIH5MKNQ.js          | forms-routes          | 430.16 kB |
-ui-components.routes-Y3XMG6ZX.js  | ui-components-routes  | 393.37 kB |
-tables.routes-PMZV7Q2F.js         | tables-routes         | 334.43 kB |
-dashboards.routes-WMVQCMES.js     | dashboards-routes     | 127.99 kB |
-widgets.routes-DJPTLUXX.js        | widgets-routes        |  88.94 kB |
-charts.routes-RK4JT57K.js         | charts-routes         |  87.31 kB |
-authentication.routes-BXFBLFCT.js | authentication-routes |  68.45 kB |
-theme-pages.routes-KHABTJK4.js    | theme-pages-routes    |  61.99 kB |
-landingpage.routes-7HHGGPB2.js    | landingpage-routes    |  41.99 kB |
-datatable.routes-W5U4B4LQ.js      | datatable-routes      |  35.49 kB |
-pages.routes-TU5ZQLBT.js          | pages-routes          |   2.98 kB |
-chunk-MBJBNJ2F.js                 | -                     |   2.76 kB |
-
-Application bundle generation complete. [33.662 seconds]
-➜  Local:   http://localhost:4200/
-➜  press h + enter to show help
-                            </code>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><h5 class="mb-0">Build</h5></th>
+                      <td>
+                        <pre class="mt-0">
+                          <code class="language-sh py-0">
+ng build
+                          </code>
                         </pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            
             </div>
           </div>
+
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">4. Build / Deployment</h4>
+              <h4 class="card-title">3. Color Themes</h4>
               <h5 class="card-subtitle mt-2 text-muted">
-                After adding url run below command for build a app.
-              </h5>
-              <pre>
-                            <code class="language-sh py-0">
-ng build
-                            </code>
-                        </pre>
-              <h5 class="card-subtitle mt-4">
-                Finally, Your app is ready to be deployed.🥳
-              </h5>
+                By default, Modernize applies the default theme using the <code>activeTheme</code> attribute to define the skin option. You can modify it or add your custom skin as needed in <code>config.ts</code>.
+              </h5> 
+
+              <p class="mt-4 card-subtitle text-muted">By Default we are giving 6 color themes : </p>
+              <div class="d-flex align-items-center gap-4 border px-4 py-3 rounded-3 mt-2">
+                <span class="border p-1 rounded px-2">Blue_Theme</span>
+                <span class="border p-1 rounded px-2">Aqua_Theme</span>
+                <span class="border p-1 rounded px-2">Purple_Theme</span>
+                <span class="border p-1 rounded px-2">Green_Theme</span>
+                <span class="border p-1 rounded px-2">Cyan_Theme</span>
+                <span class="border p-1 rounded px-2">Orange_Theme</span>
+              </div>
+
+              <pre class="mt-4">
+                <code class="language-sh py-0">
+activeTheme: 'blue_theme',
+                </code>
+            </pre>
+            </div>
+          </div>
+
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">4. Theming</h4>
+              <h5 class="card-subtitle mt-2 text-muted">
+                Modernize offers both light and dark style options, with the light style set as the default.
+              </h5> 
+
+              <p class="mt-4 card-subtitle text-muted">By Default we are giving 2 color themes, you just need to change attribute of <code>theme</code> in <code>config.ts</code> file : </p>
+              <div class="d-inline-flex align-items-center gap-4 border px-4 py-3 rounded-3 mt-2">
+                <span class="border p-1 rounded px-2">light</span>
+                <span class="border p-1 rounded px-2">dark</span>
+              </div>
+
+              <pre class="mt-4">
+                <code class="language-sh py-0">
+theme: 'dark',
+                </code>
+            </pre>
+            </div>
+          </div>
+
+          <div class="mt-4 card">
+            <div class="card-body">
+              <h4 class="card-title">5. RTL Supported</h4>
+              <h5 class="card-subtitle mt-2 text-muted">
+                Modernize comes with built-in RTL support by default.
+              </h5> 
+
+              <p class="mt-4 card-subtitle text-muted">To enable RTL direction, add <code>dir="rtl"</code> attribute in <code>config.ts</code>. </p>
+              <div class="d-inline-flex align-items-center gap-4 border px-4 py-3 rounded-3 mt-2">
+                <span class="border p-1 rounded px-2">ltr</span>
+                <span class="border p-1 rounded px-2">rtl</span>
+              </div>
+
+              <pre class="mt-4">
+                <code class="language-sh py-0">
+dir: 'rtl',
+                </code>
+            </pre>
             </div>
           </div>
 
