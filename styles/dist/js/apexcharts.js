@@ -405,6 +405,88 @@ document.addEventListener("DOMContentLoaded", function () {
   chart_bar_basic.render();
 
 
+  // bar 2
+  var options_basic = {
+    series: [
+      {
+        name: "",
+        data: [25, 10, 15, 20, 15, 30, 25, 10, 15, 20, 15, 25],
+      },
+    ],
+
+    chart: {
+      toolbar: {
+        show: false,
+      },
+      height: 260,
+      type: "bar",
+      fontFamily: "inherit",
+      foreColor: "#adb0bb",
+    },
+    colors: [
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+      "var(--bs-primary-bg-subtle)",
+    ],
+    plotOptions: {
+      bar: {
+        borderRadius: 4,
+        columnWidth: "45%",
+        distributed: true,
+        endingShape: "rounded",
+      },
+    },
+
+    dataLabels: {
+      enabled: false,
+    },
+    legend: {
+      show: false,
+    },
+    grid: {
+      yaxis: {
+        lines: {
+          show: false,
+        },
+      },
+      xaxis: {
+        lines: {
+          show: false,
+        },
+      },
+    },
+    xaxis: {
+      categories: [["Jan"], ["Feb"], ["Mar"], ["Apr"], ["May"], ["Jun"], ["Jul"], ["Aug"], ["Sep"], ["Oct"], ["Nov"], ["Dec"]],
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      },
+    },
+    yaxis: {
+      labels: {
+        show: false,
+      },
+    },
+    tooltip: {
+      theme: "dark",
+    },
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart-bar-basic2"), options_basic);
+  chart.render();
+
+
 
   // pie
   var options_simple = {
