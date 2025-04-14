@@ -13075,6 +13075,73 @@ textarea.form-control-lg {
   border-radius: 10px;
 }
 
+body .datepicker table tr td.active,
+body .datepicker table tr td.active.disabled,
+body .datepicker table tr td.active.disabled:hover,
+body .datepicker table tr td.active:hover,
+body .datepicker table tr td.today,
+body .datepicker table tr td.today.disabled,
+body .datepicker table tr td.today.disabled:hover,
+body .datepicker table tr td.today:hover,
+body .datepicker table tr td.selected,
+body .datepicker table tr td.selected.disabled,
+body .datepicker table tr td.selected.disabled:hover,
+body .datepicker table tr td.selected:hover {
+  background-color: var(--bs-primary) !important;
+  background-image: unset;
+  color: #fff;
+}
+body .datepicker table tr td.day.focused,
+body .datepicker table tr td.day:hover,
+body .datepicker table tr td.range,
+body .datepicker table tr td.range.disabled,
+body .datepicker table tr td.range.disabled:hover,
+body .datepicker table tr td.range:hover {
+  background: var(--bs-gray-100);
+}
+
+.datepicker .day,
+.datepicker .dow {
+  padding: 5px 10px;
+}
+
+.dtp-date .material-icons {
+  color: var(--bs-white) !important;
+}
+
+.error .form-control {
+  border-color: var(--bs-danger);
+}
+.error .help-block {
+  color: var(--bs-danger);
+}
+
+.validate .form-control {
+  border-color: var(--bs-success);
+}
+.validate .help-block {
+  color: var(--bs-success);
+}
+
+.picker__day--infocus:hover,
+.picker__day--outfocus:hover {
+  background: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+.picker__button--today,
+.picker__button--clear,
+.picker__button--close {
+  font-weight: 600 !important;
+}
+
+.dtp div.dtp-date,
+.dtp div.dtp-time,
+.dtp > .dtp-content > .dtp-date-view > header.dtp-header,
+.dtp table.dtp-picker-days tr > td > a.selected {
+  background: var(--bs-primary) !important;
+}
+
 @media (min-width: 992px) {
   .datatables .table-responsive {
     overflow-x: clip;
