@@ -595,6 +595,19 @@
     <div class="page-wrapper pt-0 d-block" data-bs-spy="scroll" data-bs-target="#navbar-example3"
       data-bs-smooth-scroll="true" tabindex="0">
       <!-- ============================================================== -->
+      <!-- Topbar Search  -->
+      <!-- ============================================================== -->
+      <div class="topbar-search p-3 d-none d-lg-flex align-items-center justify-content-end">
+        <form class="dropdown position-relative">
+          <div class="position-relative">
+            <input type="text" class="form-control ps-5 py-2 w-auto" id="searchInput" placeholder="Search Here...">
+            <i class="ti ti-search position-absolute top-50 start-0 translate-middle-y fs-4 text-dark ms-3"></i>
+          </div>
+          <ul class="list-unstyled mb-0 dropdown-menu dropdown-menu-end end-0" id="resultList"></ul>
+        </form>
+      </div>
+
+      <!-- ============================================================== -->
       <!-- Topbar header - style you can find in pages.scss -->
       <!-- ============================================================== -->
       <div class="position-relative d-lg-none">
@@ -753,6 +766,7 @@
   <script src="../../styles/assets/simplebar/simplebar/dist/simplebar.js"></script>
   <!--Custom JavaScript -->
   <script src="../../styles/dist/js/custom.js"></script>
+  <script src="../../styles/dist/js/topbar-search.js"></script>
   <script src="../../styles/assets/highlights/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
