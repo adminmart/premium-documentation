@@ -203,9 +203,9 @@
                         class="ti ti-license me-3 fs-4"></i> Licenses</a>
                   </li>
                   <!--Customization-->
-                <li class="nav-small-cap mt-4">
-                  <span class="hide-menu">Customization</span>
-                </li>
+                  <li class="nav-small-cap mt-4">
+                    <span class="hide-menu">Customization</span>
+                  </li>
                   <li class="sidebar-item position-relative">
                     <a class="nav-link sidebar-link has-arrow d-flex align-items-center" href="javascript:void(0)"
                       aria-expanded="false">
@@ -320,18 +320,19 @@
             <div class="mt-4 card">
               <div class="card-body">
                 <h4 class="card-title">Google fonts</h4>
-                <h5 class="card-subtitle mt-2 text-muted">1) Change the google fonts link as per your choice : <span
-                    class="text-dark font-medium">packages/main/index.html</span></h5>
-                <pre>                        <code class="language-html py-0 hljs xml">
-&lt;link
-  rel=&quot;stylesheet&quot;
-  href=&quot;https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap&quot;
-/&gt;
+                <h5 class="card-subtitle mt-2 text-muted">1) Change the google fonts link as per your choice :
+                  <span class="text-dark font-medium">packages/main/assets/scss/style.scss</span>
+                </h5>
+                <pre>
+                  <code class="language-html py-0 hljs xml">
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
                       </code>
                   </pre>
-                <h5 class="card-subtitle mt-4 text-muted">2) Change Font family : <span
-                    class="text-dark font-medium">assets/scss/_variables.scss</span></h5>
-                <pre>                        <code class="language-js py-0 hljs javascript">
+                <h5 class="card-subtitle mt-4 text-muted">2) Change Font family :
+                  <span class="text-dark font-medium">packages/main/assets/scss/_variables.scss</span>
+                </h5>
+                <pre>
+                  <code class="language-js py-0 hljs javascript">
 $body-font-family: "Manrope", sans-serif !default;
                       </code>
                   </pre>

@@ -327,22 +327,21 @@
               <h4 class="card-title">Change light Logo</h4>
               <h5 class="card-subtitle mt-2 text-muted mb-4">
                 To change logo :
-                <span class="text-dark font-medium">/src/layouts/full/logo/Logo.vue</span>
+                <span class="text-dark font-medium">/components/lc/Full/logo/Logo.vue</span>
               </h5>
               <div class="border-2 border-start border-primary bg-light rounded p-3">
-                Put the logo image into the /assets/images/logos folder.
+                Put the logo image into the /public/images/logos folder.
               </div>
               <pre>
                     <code class="language-js py-0">
 &lt;script setup lang=&quot;ts&quot;&gt;
-  import { RouterLink } from 'vue-router';
   import Logoimg from '@/assets/images/logos/logo.svg';
 &lt;/script&gt;
 &lt;template>
     &lt;div class="logo">
-        &lt;RouterLink to=&quot;/&quot;&gt;
+        &lt;NuxtLink to=&quot;/&quot;&gt;
             &lt;img :src=&quot;Logoimg&quot; alt=&quot;home&quot; /&gt;
-        &lt;/RouterLink&gt;
+        &lt;/NuxtLink&gt;
     &lt;/div&gt;
 &lt;/template&gt;
       </code>
