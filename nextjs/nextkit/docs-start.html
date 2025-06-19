@@ -128,8 +128,14 @@
                                 </li>
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-database.html"><i
-                      class="ti ti-brand-firebase me-3 fs-4"></i>
+                      class="ti ti-database me-3 fs-4"></i>
                      Database
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-prisma-setup.html"><i
+                      class="ti ti-brand-prisma me-3 fs-4"></i>
+                    Prisma Setup
                   </a>
                 </li>
                                 <li class="sidebar-item">
@@ -240,8 +246,14 @@
                                     </li>
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-database.html"><i
-                      class="ti ti-brand-firebase me-3 fs-4"></i>
+                      class="ti ti-database me-3 fs-4"></i>
                      Database
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-prisma-setup.html"><i
+                      class="ti ti-brand-prisma me-3 fs-4"></i>
+                    Prisma Setup
                   </a>
                 </li>
                                     <li class="sidebar-item">
@@ -319,7 +331,7 @@
                     </div>
                     <div class="mt-4 card">
                         <div class="card-body">
-                          <h4 class="card-title">1. Installation guide for Prisma Mongodb-Sqlite demo</h4>
+                          <h4 class="card-title">1. Installation guide for Prisma Mongodb demo</h4>
                           <h5 class="card-subtitle mt-2 text-muted">
                             Open package folder and install its dependencies. We
                             recommended yarn or npm.
@@ -352,31 +364,18 @@ npm install
                                 <tr>
                                   <th scope="row">
                                     <div>
-                                      <h5 class="mb-0">Replace real credential with desired database</h5>
-                                      <div>
-                                        (<span>.env.mogo</span> or <span>.env.sqlite</span>)
-                                      </div>
+                                      <h5 class="mb-0">Initialize project with real credentials</h5>
                                     </div>
                                   </th>
                                   <td>
                                     <pre class="mt-0">
                                       <code class="language-sh py-0">
 DATABASE_URL="YOUR_DATABASE_URL"
-DIRECT_URL="YOUR_DIRECT_URL"
+ACCESS_TOKEN_SECRET="YOUR_ACCESS_TOKEN_SECRET"
                                       </code>
                                   </pre>
                                   </td>
                                 </tr>                               
-                                <tr>
-                                  <th scope="row"><h5 class="mb-0">Run script to choose projects databse</h5></th>
-                                  <td>
-                                    <pre class="mt-0">
-                                      <code class="language-sh py-0">
-npm run setup:db
-                                      </code>
-                                    </pre>
-                                  </td>
-                                </tr>
                                 <tr>
                                   <th scope="row"><h5 class="mb-0">Start</h5></th>
                                   <td>

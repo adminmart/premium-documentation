@@ -123,8 +123,14 @@
                 </li>
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-database.html"><i
-                      class="ti ti-brand-firebase me-3 fs-4"></i>
+                      class="ti ti-database me-3 fs-4"></i>
                      Database
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-prisma-setup.html"><i
+                      class="ti ti-brand-prisma me-3 fs-4"></i>
+                    Prisma Setup
                   </a>
                 </li>
                 <li class="sidebar-item">
@@ -227,8 +233,14 @@
                   </li>
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-database.html"><i
-                      class="ti ti-brand-firebase me-3 fs-4"></i>
+                      class="ti ti-database me-3 fs-4"></i>
                      Database
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="nav-link sidebar-link d-flex align-items-center" href="docs-prisma-setup.html"><i
+                      class="ti ti-brand-prisma me-3 fs-4"></i>
+                    Prisma Setup
                   </a>
                 </li>
                   <li class="sidebar-item">
@@ -292,8 +304,7 @@
               <code class="language-plaintext">
 📦
 ├── 📂 docs                                     > Documentation for the Theme
-├── 📂 packages                          
-│   │   ├── 📂 .flowbite-react
+├── 📂 nextkit nextjs prisma supabase                        
 │   │   ├── 📂 prisma
 │   │   │   ├── 📄 schema.prisma
 │   │   ├── 📂 public
@@ -316,6 +327,32 @@
 │   │   │   │   ├── 📄 loading.jsx
 │   │   │   │   ├── 📄 not-found.jsx
 │   │   │   │   ├── 📂 utils                
+│   │   ├── 📄 .env
+│   │   ├── 📄 next.config.ts
+│   │   ├── 📄 package.json
+│   │   ├── 📄 tsconfig.json
+├── 📂 nextkit nextjs prisma mongodb                        
+│   │   ├── 📂 prisma
+│   │   │   ├── 📄 schema.prisma
+│   │   ├── 📂 public
+│   │   ├── 📂 src
+│   │   │   ├── 📂 app
+│   │   │   │   ├── 📂 (DashboardLayout)    > Contains all the pages
+│   │   │   │   │   ├── 📂 icons
+│   │   │   │   │   ├── 📂 layout           > Contains header & sidebar 
+│   │   │   │   │   ├── 📂 sample-page
+│   │   │   │   │   ├── 📂 user-profile
+│   │   │   │   │   ├── 📂 utilities
+│   │   │   │   │   ├── 📄 layout.jsx
+│   │   │   │   │   ├── 📄 page.jsx
+│   │   │   │   ├── 📂 api                  > All data of apps
+│   │   │   │   ├── 📂 auth                 > Authentication pages
+│   │   │   │   ├── 📂 components           > All components of Dashboards, UI, Forms, etc.
+│   │   │   │   ├── 📂 css                  > All template styles
+│   │   │   │   ├── 📄 layout.jsx
+│   │   │   │   ├── 📄 not-found.jsx
+│   │   │   │   ├── 📂 utils  
+│   │   │   ├── 📄 middleware.ts              
 │   │   ├── 📄 .env
 │   │   ├── 📄 next.config.ts
 │   │   ├── 📄 package.json

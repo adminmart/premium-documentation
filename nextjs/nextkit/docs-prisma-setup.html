@@ -313,190 +313,105 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
-          <h4 class="mb- pb-2">Authentication</h4>
+          <h4 class="mb- pb-2">Prisma ORM Quickstart</h4>
           <div class="mt-4 alert alert-primary">
-            <h6 class="card-subtitle">Guide for prisma supabase authentication and authorization</h6>
+            <h6 class="card-subtitle">Complete Prisma Setup Guide with PostgreSQL and MongoDB</h6>
           </div>
        <br>
           <div class="mt-0 card">
             <div class="card-body">
-              <h4 class="card-title"> Supabase</h4>
+              <h4 class="card-title fw-semibold">Steps to configure Prisma</h4>
             
-<h5 class="mt-4 fw-bold">Folders And Files</h5>
- <p>Overwite .env file with real Credentials
-</p>
+<h5 class="mt-4 fw-medium fs-5">1. Install Prisma CLI and Client</h5>
 <pre>       
                 <code class="language-js py-0 hljs javascript">
-<span class="hljs-comment">// this is your .env file                  </span>
-NEXT_PUBLIC_SUPABASE_URL=<span class="hljs-string">"Your Url"</span>
-NEXT_PUBLIC_SUPABASE_ANON_KEY=<span class="hljs-string">"Your SUPABASE_ANON_KEY Key"</span>
-               
+npm install prisma --save-dev
+npm install @prisma/client
                </code>
                </pre> 
-
-
-
-              <p>Inside that folder you will get this file <span class="bg-light"> src &gt; app &gt; guards &gt; supabase &gt;
-                supabaseClient.ts
-                 </span></p>
-
-                 
-                 <pre> <code class="language-js py-0 hljs javascript">
-
-<span class="hljs-keyword">import</span> {createClient} <span class="hljs-keyword">from</span> <span class="hljs-string">"@supabase/supabase-js"</span>
-
-<span class="hljs-attr">const supabaseUrl: string | any =</span>process.env.NEXT_PUBLIC_SUPABASE_URL;
-<span class="hljs-attr">const supabaseKey: string | any =</span>process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
- 
-                  
-<span class="hljs-keyword">export </span>const  supabase = createClient(supabaseUrl,supabaseKey);
-                                  </code>
-                                </pre>
-
-    
-                 
-           
-          
-<h5 class="mt-4 fw-bold">Platform Configuration</h5>
-<pre> <code class="hljs javascript">
-<span class="hljs-comment">// -----------------------------------------------------------------------------------------</span>
-<span class="hljs-comment">// File : src/app/context/AuthContext.tsx</span>
-<span class="hljs-comment">// -----------------------------------------------------------------------------------------</span>
-  <span class="hljs-tag">const  initialState : InitialStateType  = { 
-    <span class="hljs-name"> platform: 'Supabase',</span>
-  }
-  </span>
-
-</code>
-
-
-</pre>
-
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">Steps for Generate key</h4>
-              <ul class="pl-4 font-14 text-muted">
-                <li class="py-2">
-                Go to 
-                  <span class="text-primary border-bottom border-primary">“https://supabase.com/</span>
-                 
-                </li>
-                <li class="py-2">click on "Sign Up" or "Log In" and complete the process.</li>
-
-                <li class="py-2">On the dashboard, click on the "New Project" button.</li>
-                <li class="py-2">
-                  After Display popup menu, Enter Project name, Select
-                  Country.Click
-                  on Create Project Button.
-                </li>
-                <li class="py-2">
-                  Once your project is created, go to the Project Dashboard.
-                </li>
-                <li class="py-2">
-                  In Left Panel,  Now Click on
-                  authentication Tab.
-                </li>
-                <li class="py-2">By default, Email & Password authentication is enabled, which allows users to sign up and sign in using their email and password.</li>
-                <li class="py-2">
-                  You can also enable OAuth Providers like Google, GitHub, Twitter, etc.
-                </li>
-                <li class="py-2">
-                  In the Settings tab under Authentication, you can customize email templates for user verification, password reset emails, and more.
-                </li>
-                <li class="py-2">
-                  Now, From the left sidebar, click on API.
-                </li>
-                <li class="py-2">
-                  Poject Url: This is used for client-side authentication, to interact with your Supabase project. Copy this URL.
-                </li>
-                <li class="py-2">
-                  Anon Key: This is used for client-side authentication, Copy this key.
-                </li>
-                <li class="py-2">
-                  Install Supabase : npm install @supabase/supabase-js
-                </li>
-                <li class="py-2">
-                  Create an .env File to Store Your Keys
-                </li>
-               
-<pre>                <code class="language-js py-0 hljs javascript">
- <span class="hljs-comment">// this is your .env file                  </span>
-NEXT_PUBLIC_SUPABASE_URL=<span class="hljs-string">"Your Url"</span>
-NEXT_PUBLIC_SUPABASE_ANON_KEY=<span class="hljs-string">"Your SUPABASE_ANON_KEY Key"</span>
-
-</code>
-</pre>
-<li class="py-2">
-  <img src="../../styles/dist/images/modernize/supabase (1).png" class="w-100" alt="supabase">
-</li>
-<li class="py-2">
-  Create the supabaseClient.ts File
-</li>
-
-<pre> <code class="language-js py-0 hljs javascript">
-
-  <span class="hljs-keyword">import</span> {createClient} <span class="hljs-keyword">from</span> <span class="hljs-string">"@supabase/supabase-js"</span>
-  
-  <span class="hljs-attr">const supabaseUrl: string | any =</span>process.env.NEXT_PUBLIC_SUPABASE_URL;
-  <span class="hljs-attr">const supabaseKey: string | any =</span>process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-   
-                    
-  <span class="hljs-keyword">export </span>const  supabase = createClient(supabaseUrl,supabaseKey);
-                                    </code>
-                                  </pre>
-
-                                
-              </ul>
-            </div>
-          </div>
-
-          <div class="mt-4 alert alert-primary">
-            <h6 class="card-subtitle">Guide for Prisma Mongodb-Sqlite Authentication and Authorization</h6>
-          </div>
-       <br>
-          <div class="mt-0 card">
-            <div class="card-body">
-              <h4 class="card-title">JWT based authentication</h4>
-            
-<h5 class="mt-4 fw-bold">Folders And Files</h5>
- <p>You can configure your public and protected routes in middleware.ts file
-</p>
+<h5 class="mt-4 fw-medium fs-5">2. Initialize Prisma</h5>
 <pre>       
                 <code class="language-js py-0 hljs javascript">
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
-
-export function middleware(request: NextRequest) {
-  const token = request.cookies.get('accessToken')?.value;
-  const pathname = request.nextUrl.pathname;
-
-  const publicRoutes = ['/auth/login', '/auth/register', '/api', '/_next', '/favicon.ico'];
-
-  if (publicRoutes.some((path) => pathname.startsWith(path))) {
-    return NextResponse.next();
-  }
-
-  if (!token) {
-    return NextResponse.redirect(new URL('/auth/login', request.url));
-  }
-
-  return NextResponse.next();
+npx prisma init
+               </code>
+               </pre> 
+<p class="fs-5 fw-medium mb-0 mt-2" >This creates:</p>
+<ul>
+    <li class="fs-6" >prisma/schema.prisma → where your models and DB settings live</li>
+    <li class="fs-6" >.env → where you define the database connection URL</li>
+</ul>
+<h5 class="mt-4 fw-medium fs-5">3. Setup your desired databse url in .env</h5>
+<pre>       
+                <code class="language-js py-0 hljs javascript">
+DATABASE_URL="YOUR_DATABASE_URL"
+               </code>
+               </pre> 
+<h5 class="mt-4 fw-medium fs-5">4. Define your data models</h5>
+<pre>       
+                <code class="language-js py-0 hljs javascript">
+generator client {
+  provider = "prisma-client-js"
 }
 
-export const config = {
-  matcher: ['/:path*'],
-};
+datasource db {
+  provider = "mongodb" // or "postgresql"
+  url      = env("DATABASE_URL")
+}
 
-               
+model User {
+  id    String   @id @default(auto()) @map("_id") @db.ObjectId 
+  name  String
+  email String  @unique
+}
+
+               </code>
+               </pre> 
+<h5 class="mt-4 fw-medium fs-5">5. Push schema to the database</h5>
+<pre>       
+                <code class="language-js py-0 hljs javascript">
+npx prisma db push   # Use this to sync without migrations 
+# OR
+npx prisma migrate dev --name init  # Use this to generate a SQL migration
+
+
+               </code>
+               </pre> 
+<h5 class="mt-4 fw-medium fs-5">6. Generate Prisma Client</h5>
+<pre>       
+                <code class="language-js py-0 hljs javascript">
+npx prisma generate
+               </code>
+               </pre> 
+<h5 class="mt-4 fw-medium fs-5">7. Use Prisma Client in your code</h5>
+<pre>       
+                <code class="language-js py-0 hljs javascript">
+import { NextRequest, NextResponse } from "next/server";
+import { PrismaClient } from "@prisma/client";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+
+export async function POST(req: NextRequest) {
+    const prisma = new PrismaClient();
+    try {
+        const { email, password } = await req.json();
+         await prisma.user.findUnique({
+                where: {
+                    email
+                }
+            });
+    } catch (error) {
+        console.error('Error logging user:', error);
+        return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    }
+}
+
+
                </code>
                </pre> 
 
+
             </div>
           </div>
-
           <!-- ============================================================== -->
           <!-- End Page wrapper  -->
           <!-- ============================================================== -->
