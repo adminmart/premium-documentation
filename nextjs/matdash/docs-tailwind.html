@@ -367,118 +367,92 @@
                             <h4 class="card-title">1. Overrided Tailwind Classes</h4>
                             <h5 class="card-subtitle mt-2 text-muted">For any kind of overwrite in
                                 shadow,border-radius,font-sizes,and declare color variables write here : <span
-                                    class="text-dark font-medium d-block mt-1">src/tailwind.config.ts</span></h5>
+                                    class="text-dark font-medium d-block mt-1">src/app/css/globals.css</span></h5>
                             <pre>                            <code class="language-js py-0 hljs javascript">
-    <span class="hljs-keyword">import</span> type { Config } <span class="hljs-keyword">from</span> <span class="hljs-string">"tailwindcss"</span>;
-    <span class="hljs-keyword">import</span> flowbite <span class="hljs-keyword">from</span> <span class="hljs-string">"flowbite-react/tailwind"</span>;
-    <span class="hljs-keyword">const</span> config: Config = {
-      <span class="hljs-attr">darkMode</span>: <span class="hljs-string">"class"</span>,
-      <span class="hljs-attr">content</span>: [
-        <span class="hljs-string">"./src/pages/**/*.{js,ts,jsx,tsx,mdx}"</span>,
-        <span class="hljs-string">"./src/components/**/*.{js,ts,jsx,tsx,mdx}"</span>,
-        <span class="hljs-string">"./src/app/**/*.{js,ts,jsx,tsx,mdx}"</span>,
-    
-        <span class="hljs-comment">// Flowbite content</span>
-        flowbite.content(),
-      ],
-      <span class="hljs-attr">theme</span>: {
-        <span class="hljs-attr">extend</span>: {
-          <span class="hljs-attr">boxShadow</span>: {
-            <span class="hljs-attr">md</span>: <span class="hljs-string">"0px 2px 4px -1px rgba(175, 182, 201, 0.2);"</span>,
-            <span class="hljs-attr">lg</span>: <span class="hljs-string">"0 1rem 3rem rgba(0, 0, 0, 0.175)"</span>,
-            <span class="hljs-string">"dark-md"</span>:
-              <span class="hljs-string">"rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px"</span>,
-            <span class="hljs-attr">sm</span>: <span class="hljs-string">"0 6px 24.2px -10px rgba(41, 52, 61, .22)"</span>,
-            <span class="hljs-string">"btn-shadow"</span>: <span class="hljs-string">"box-shadow: rgba(0, 0, 0, .05) 0 9px 17.5px"</span>,
-            <span class="hljs-attr">tw</span>:<span class="hljs-string">"rgba(175, 182, 201, 0.2) 0px 2px 4px -1px"</span>,
-            <span class="hljs-attr">btnshdw</span>: <span class="hljs-string">"0 17px 20px -8px rgba(77, 91, 236, .231372549)"</span>,
-          },
-          <span class="hljs-attr">borderRadius</span>: {
-            <span class="hljs-attr">sm</span>: <span class="hljs-string">"6px"</span>,
-            <span class="hljs-attr">md</span>: <span class="hljs-string">"9px"</span>,
-            <span class="hljs-attr">lg</span>: <span class="hljs-string">"24px"</span>,
-            <span class="hljs-attr">tw</span>: <span class="hljs-string">"12px"</span>,
-            <span class="hljs-attr">bb</span>: <span class="hljs-string">"20px"</span>,
-          },
-          <span class="hljs-attr">container</span>: {
-            <span class="hljs-attr">center</span>: <span class="hljs-literal">true</span>,
-            <span class="hljs-attr">padding</span>: <span class="hljs-string">"20px"</span>,
-          },
-          <span class="hljs-attr">letterSpacing</span>: {
-            <span class="hljs-attr">tightest</span>: <span class="hljs-string">"-.075em"</span>,
-            <span class="hljs-attr">tighter</span>: <span class="hljs-string">"-.05em"</span>,
-            <span class="hljs-attr">tight</span>: <span class="hljs-string">"-.025em"</span>,
-            <span class="hljs-attr">normal</span>: <span class="hljs-string">"0"</span>,
-            <span class="hljs-attr">wide</span>: <span class="hljs-string">".025em"</span>,
-            <span class="hljs-attr">wider</span>: <span class="hljs-string">".05em"</span>,
-            <span class="hljs-attr">widest</span>: <span class="hljs-string">"1.5px"</span>,
-          },
-          <span class="hljs-attr">gap</span>: {
-            <span class="hljs-string">"30"</span>: <span class="hljs-string">"30px"</span>,
-          },
-          <span class="hljs-attr">padding</span>: {
-            <span class="hljs-string">"30"</span>: <span class="hljs-string">"30px"</span>,
-          },
-          <span class="hljs-attr">margin</span>: {
-            <span class="hljs-string">"30"</span>: <span class="hljs-string">"30px"</span>,
-          },
-          <span class="hljs-attr">fontSize</span>: {
-            <span class="hljs-string">"15"</span>: <span class="hljs-string">"15px"</span>,
-            <span class="hljs-string">"13"</span>: <span class="hljs-string">"13px"</span>,
-            <span class="hljs-string">"22"</span>: <span class="hljs-string">"22px"</span>,
-            <span class="hljs-string">"28"</span>: <span class="hljs-string">"28px"</span>,
-            <span class="hljs-string">"34"</span>: <span class="hljs-string">"34px"</span>,
-            <span class="hljs-string">"40"</span>: <span class="hljs-string">"40px"</span>,
-          },
-          <span class="hljs-attr">colors</span>: {
-            <span class="hljs-attr">cyan</span>: {
-              <span class="hljs-string">"500"</span>: <span class="hljs-string">"var(--color-primary)"</span>,
-              <span class="hljs-string">"600"</span>: <span class="hljs-string">"var(--color-primary)"</span>,
-              <span class="hljs-string">"700"</span>: <span class="hljs-string">"var(--color-primary)"</span>,
-            },
-    
-            <span class="hljs-attr">primary</span>: <span class="hljs-string">"var(--color-primary)"</span>,
-            <span class="hljs-attr">secondary</span>: <span class="hljs-string">"var(--color-secondary)"</span>,
-            <span class="hljs-attr">info</span>: <span class="hljs-string">"var(--color-info)"</span>,
-            <span class="hljs-attr">success</span>: <span class="hljs-string">"var(--color-success)"</span>,
-            <span class="hljs-attr">warning</span>: <span class="hljs-string">"var(--color-warning)"</span>,
-            <span class="hljs-attr">error</span>: <span class="hljs-string">"var(--color-error)"</span>,
-            <span class="hljs-attr">lightprimary</span>: <span class="hljs-string">"var(--color-lightprimary)"</span>,
-            <span class="hljs-attr">lightsecondary</span>: <span class="hljs-string">"var(--color-lightsecondary)"</span>,
-            <span class="hljs-attr">lightsuccess</span>: <span class="hljs-string">"var( --color-lightsuccess)"</span>,
-            <span class="hljs-attr">lighterror</span>: <span class="hljs-string">"var(--color-lighterror)"</span>,
-            <span class="hljs-attr">lightinfo</span>: <span class="hljs-string">"var(--color-lightinfo)"</span>,
-            <span class="hljs-attr">lightwarning</span>: <span class="hljs-string">"var(--color-lightwarning)"</span>,
-            <span class="hljs-attr">border</span>: <span class="hljs-string">"var(--color-border)"</span>,
-            <span class="hljs-attr">bordergray</span>: <span class="hljs-string">"var(--color-bordergray)"</span>,
-            <span class="hljs-attr">lightgray</span>: <span class="hljs-string">"var( --color-lightgray)"</span>,
-            <span class="hljs-attr">muted</span>: <span class="hljs-string">"var(--color-muted)"</span>,
-            <span class="hljs-attr">lighthover</span>: <span class="hljs-string">"var(--color-lighthover)"</span>,
-            <span class="hljs-attr">surface</span>: <span class="hljs-string">"var(--color-surface-ld)"</span>,
-            <span class="hljs-attr">sky</span>: <span class="hljs-string">"var(--color-sky)"</span>,
-            <span class="hljs-attr">bodytext</span>: <span class="hljs-string">"var(--color-bodytext)"</span>,
-            <span class="hljs-comment">//Dark Colors Variables</span>
-            dark: <span class="hljs-string">"var(--color-dark)"</span>,
-            <span class="hljs-attr">link</span>: <span class="hljs-string">"var(--color-link)"</span>,
-            <span class="hljs-attr">darklink</span>: <span class="hljs-string">"var(--color-darklink)"</span>,
-            <span class="hljs-attr">darkborder</span>: <span class="hljs-string">"var(--color-darkborder)"</span>,
-            <span class="hljs-attr">darkgray</span>: <span class="hljs-string">"var(--color-darkgray)"</span>,
-            <span class="hljs-attr">primaryemphasis</span>: <span class="hljs-string">"var(--color-primary-emphasis)"</span>,
-            <span class="hljs-attr">secondaryemphasis</span>: <span class="hljs-string">"var(--color-secondary-emphasis)"</span>,
-            <span class="hljs-attr">warningemphasis</span>: <span class="hljs-string">"var(--color-warning-emphasis)"</span>,
-            <span class="hljs-attr">erroremphasis</span>: <span class="hljs-string">"var(--color-error-emphasis)"</span>,
-            <span class="hljs-attr">successemphasis</span>: <span class="hljs-string">"var(--color-success-emphasis)"</span>,
-            <span class="hljs-attr">infoemphasis</span>: <span class="hljs-string">"var(--color-info-emphasis)"</span>,
-            <span class="hljs-attr">darkmuted</span>: <span class="hljs-string">"var( --color-darkmuted)"</span>,
-          },
-        },
-      },
-      <span class="hljs-attr">plugins</span>: [
-        <span class="hljs-comment">//Add Flowbite Plugin</span>
-        <span class="hljs-built_in">require</span>(<span class="hljs-string">"flowbite/plugin"</span>),
-      ],
-    };
-    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> config;
+@theme {
+  --shadow-md: 0px 2px 4px -1px rgba(175, 182, 201, 0.2);
+  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --shadow-dark-md:
+    rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
+  --shadow-sm: 0 6px 24.2px -10px rgba(41, 52, 61, 0.22);
+  --shadow-btn-shadow: box-shadow: rgba(0, 0, 0, 0.05) 0 9px 17.5px;
+  --shadow-tw: rgba(175, 182, 201, 0.2) 0px 2px 4px -1px;
+  --shadow-btnshdw: 0 17px 20px -8px rgba(77, 91, 236, 0.231372549);
+  --shadow-elevation1: 0px 12px 30px -2px rgba(58, 75, 116, 0.14);
+  --shadow-elevation2: 0px 24px 24px -12px rgba(0, 0, 0, 0.05);
+  --shadow-elevation3: 0px 24px 24px -12px rgba(99, 91, 255, 0.15);
+  --shadow-elevation4: 0px 12px 12px -6px rgba(0, 0, 0, 0.15);
+
+  --radius-sm: 6px;
+  --radius-md: 9px;
+  --radius-lg: 24px;
+  --radius-tw: 12px;
+  --radius-bb: 20px;
+
+  --tracking-tightest: -0.075em;
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 1.5px;
+
+  --gap-30: 30px;
+
+  --padding-30: 30px;
+
+  --margin-30: 30px;
+
+  --text-13: 13px;
+  --text-15: 15px;
+  --text-17: 17px;
+  --text-22: 22px;
+  --text-28: 28px;
+  --text-34: 34px;
+  --text-40: 40px;
+  --text-44: 44px;
+  --text-50: 50px;
+  --text-56: 56px;
+  --text-64: 64px;
+
+  --color-cyan-500: var(--color-primary);
+  --color-cyan-600: var(--color-primary);
+  --color-cyan-700: var(--color-primary);
+
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-info: var(--color-info);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+  --color-lightprimary: var(--color-lightprimary);
+  --color-lightsecondary: var(--color-lightsecondary);
+  --color-lightsuccess: var(--color-lightsuccess);
+  --color-lighterror: var(--color-lighterror);
+  --color-lightinfo: var(--color-lightinfo);
+  --color-lightwarning: var(--color-lightwarning);
+  --color-border: var(--color-border);
+  --color-bordergray: var(--color-bordergray);
+  --color-lightgray: var(--color-lightgray);
+  --color-muted: var(--color-muted);
+  --color-lighthover: var(--color-lighthover);
+  --color-surface: var(--color-surface-ld);
+  --color-sky: var(--color-sky);
+  --color-bodytext: var(--color-bodytext);
+  --color-dark: var(--color-dark);
+  --color-link: var(--color-link);
+  --color-darklink: var(--color-darklink);
+  --color-darkborder: var(--color-darkborder);
+  --color-darkgray: var(--color-darkgray);
+  --color-primaryemphasis: var(--color-primary-emphasis);
+  --color-secondaryemphasis: var(--color-secondary-emphasis);
+  --color-warningemphasis: var(--color-warning-emphasis);
+  --color-erroremphasis: var(--color-error-emphasis);
+  --color-successemphasis: var(--color-success-emphasis);
+  --color-infoemphasis: var(--color-info-emphasis);
+  --color-darkmuted: var(--color-darkmuted);
+}
                                   
      
                                 </code>
