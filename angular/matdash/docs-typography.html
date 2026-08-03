@@ -342,7 +342,7 @@
                         </code>
                     </pre>
                 <h5 class="card-subtitle mt-4 text-muted">2) Change Font family : <span
-                    class="text-dark font-medium">src/asssets/scss/_variables.scss</span></h5>
+                    class="text-dark font-medium">src/assets/scss/_variables.scss</span></h5>
                 <pre>
                         <code class="language-js py-0">
 // Font URL
@@ -354,16 +354,15 @@ $font-family: "Manrope", sans-serif;
                     </pre>
 
                 <h5 class="card-subtitle mt-4 text-muted">3) Change Font family in : <span
-                    class="text-dark font-medium">src/asssets/scss/override-component/_theme.scss</span> and <span
-                    class="text-dark font-medium">src/asssets/scss/themecolors/*.scss (all files)</span></h5>
+                    class="text-dark font-medium">src/assets/scss/override-component/_theme.scss</span></h5>
                 <pre>
                         <code class="language-js py-0">
 // Font Family
-                          
+
 @include mat.theme(
   (
     color: mat.$azure-palette,
-    typography: "Manrope",
+    typography: $font-family,
   )
 );
 

@@ -330,14 +330,14 @@
 // File: src/app/app.routes.ts
 // ----------------------------------------------------
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: FullComponent,
     children: [
       {
         path: '',
-        redirectTo: '/landingpage',
+        redirectTo: '/dashboards/dashboard1',
         pathMatch: 'full',
       },
       // new added
@@ -349,8 +349,8 @@ const routes: Routes = [
     ],
   },
 ];
- 
- 
+
+
                             </code>
                         </pre>
             </div>
@@ -367,7 +367,7 @@ const routes: Routes = [
 export const navItems: NavItem[] = [
   {
     displayName: 'Starter',
-    iconName: 'aperture',
+    iconName: 'solar:widget-line-duotone',
     route: '/starter',
   },
 ]
