@@ -358,16 +358,36 @@
                     <div class="mt-4 card">
                         <div class="card-body">
                             <h4 class="card-title">1. How does it work?</h4>
-                            <h5 class="card-subtitle mt-2 text-muted">Axios has been configured in the folder: <span
-                                    class="text-dark font-medium">src/_mockApis/mock.ts</span></h5>
+                            <h5 class="card-subtitle mt-2 text-muted">Axios has been configured in the file: <span
+                                    class="text-dark font-medium">src/utils/axios.ts</span>, and mock API responses
+                                are set up in <span class="text-dark font-medium">src/_mockApis/mockAdapter.ts</span></h5>
                             <h5 class="card-subtitle mt-3 mb-4 text-muted">To use Axios on a page, you need to import it
                                 and make a call. After that, you need to make calls to Axios using <span
                                     class="text-dark font-medium">axios.get('path') or axios.post('path')</span> see
                                 below implementation.</h5>
                             <pre>
                                 <code class="language-js py-0 hljs javascript">
-import axios from '../../../utils/axios';  // 1. import axios
-import { createSlice } from '@reduxjs/toolkit';
+// src/stores/apps/chat.ts
+import axios from '@/utils/axios';  // 1. import axios
+import { defineStore } from 'pinia';
+
+export const useChatStore = defineStore('chat', {
+    state: () => ({
+        chats: [],
+        chatContent: 1
+    }),
+    actions: {
+        async fetchChats() {
+            const data = await axios.get('/api/data/chat/ChatData'); // 2. call to fetch data
+            this.chats = data.data; // 3. store data into state
+        },
+        SelectChat(itemID: number) {
+            this.chatContent = itemID;
+        }
+    }
+});
+
+// src/views/apps/chat/Chats.vue
 import { useChatStore } from '@/stores/apps/chat';
 const store = useChatStore();
 

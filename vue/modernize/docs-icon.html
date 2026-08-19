@@ -340,7 +340,7 @@
                 <pre>
                         <code class="language-js py-0">
 // ----------------------------------------------------------------------
-// /main.ts
+// src/main.ts
 // ----------------------------------------------------------------------
 
 import VueTablerIcons from "vue-tabler-icons";
@@ -350,13 +350,13 @@ app.use(VueTablerIcons);
 // usage
 // ----------------------------------------------------------------------
 
-import { IconGridDots,IconAward,IconCalendar,IconMail } from '@tabler/icons';
+&lt;script setup lang="ts"&gt;
+import { MoodSmileIcon, CircleXIcon } from 'vue-tabler-icons';
+&lt;/script&gt;
 
 &lt;template&gt;
-  &lt;IconGridDots size={22} /&gt;
-  &lt;IconAward size={25} /&gt;
-  &lt;IconCalendar size={30}/&gt;
-  &lt;IconMail size={40}/&gt;
+  &lt;MoodSmileIcon size="22" /&gt;
+  &lt;CircleXIcon size="25" /&gt;
 &lt;/template&gt;
                         </code>
                     </pre>
